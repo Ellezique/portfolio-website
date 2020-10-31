@@ -1,9 +1,15 @@
 
+
+
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
+     }
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
   /*BACKGROUND IMAGE*/
   .hero-image {
     background-image: url("../images/ocean13.jpg"); /*image used*/
@@ -24,13 +30,23 @@ body {
     transform: translate(-50%, -50%);
     color: white;
   }
+
+  .hero-text h1{
+    font-family: 'Condiment', cursive;
+    font-size: 70px;
+  }
+
+  .hero-text h3{
+    font-family: 'Condiment', cursive;
+    font-size: 40px;
+  }
   /*END BACKGROUND IMAGE*/
  
   /*HEADER*/
-  header {
-    
-    
-  }
+ header {
+   color: white;
+   
+ }
   /*END HEADER*/
 
   /*NAVBAR - nav only*/
@@ -53,6 +69,9 @@ body {
   nav li a {
     display: inline;
     color: white;
+    font-family: 'Permanent Marker', cursive; 
+    font-size: 24px;
+    letter-spacing: 2px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -67,8 +86,20 @@ body {
 
   /*PAGES OTHER THAN HOME PAGE*/
 
-  .main {   /*"main" class*/
+ main {   
     color: white;
     padding: 40px; /*without padding, the content in the container overlaps with the navbar*/
     
+    
   }
+
+  /*FOOTER*/
+   footer {
+     text-align: center;
+     color: white;
+     
+     /*this needs to be moved to to the bottom of the container*/
+     
+     
+
+   }
