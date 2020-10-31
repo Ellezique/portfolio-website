@@ -4,13 +4,15 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
      }
 
 p {
   font-family: 'Roboto', sans-serif;
 }
-  /*BACKGROUND IMAGE*/
+
+
+  /*BACKGROUND IMAGE AND HERO TEXT ON INDEX PAGE*/
   .hero-image {
     background-image: url("../images/ocean13.jpg"); /*image used*/
     background-color: black; /*the background color will display while the image is loading and if the image does not load*/
@@ -40,7 +42,8 @@ p {
     font-family: 'Condiment', cursive;
     font-size: 40px;
   }
-  /*END BACKGROUND IMAGE*/
+
+/*END BACKGROUND IMAGE*/
  
   /*HEADER*/
  header {
@@ -97,9 +100,14 @@ p {
    footer {
      text-align: center;
      color: white;
-     
+     font-family: 'Roboto', sans-serif;
      /*this needs to be moved to to the bottom of the container*/
-     
-     
-
    }
+
+   /*IMAGES*/
+
+ img .large {   /*the image is not displaying and this needs to be fixed*/
+  position: relative;  
+  height: 50%;
+  
+ }
