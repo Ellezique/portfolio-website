@@ -25,4 +25,50 @@ body {
     color: white;
   }
   /*END BACKGROUND IMAGE*/
+ 
+  /*HEADER*/
+  header {
+    
+    
+  }
+  /*END HEADER*/
+
+  /*NAVBAR - nav only*/
   
+  nav ul{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent; /*navbar is transparent so that you can see the background image*/
+    position: fixed; /*navbar stays at the top of the page regardless of scrolling*/
+    top: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left; /*navbar stays on the left of its container*/
+  }
+  
+  nav li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: black;
+  }
+
+  /*NAVBAR END*/
+  
+
+  /*PAGES OTHER THAN HOME PAGE*/
+
+  .main {   /*"main" class*/
+    color: white;
+    padding: 40px; /*without padding, the content in the container overlaps with the navbar*/
+    
+  }
