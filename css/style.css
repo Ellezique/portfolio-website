@@ -23,8 +23,26 @@ p {
      border: 2px solid green; /*TEMP BORDER to be deleted*/
 }
 
+h1 {
+    text-shadow: 5px 5px 15px black;
+    font-size: 80px;
+    text-align: center;
+    color: #e1ebef;
+    font-family: 'Caveat', cursive;
+      border: 2px solid orange; /*TEMP BORDER to be deleted*/
+  }
 
-  /*BACKGROUND IMAGE AND HERO TEXT ON INDEX PAGE*/
+  h3 {
+    text-shadow: 8px 6px 9px black;
+    text-shadow: 5px 5px 15px black;
+    font-size: 50px; 
+    text-align: center;
+    color: #e1ebef;
+    font-family: 'Caveat', cursive;
+      border: 2px solid orange; /*TEMP BORDER to be deleted*/
+  }
+
+  /*BACKGROUND IMAGE*/
   .hero-image {
     background-image: url("../images/ocean13.jpg"); /*image used*/
     background-color: black; /*the background color will display while the image is loading and if the image does not load*/
@@ -36,39 +54,20 @@ p {
        border: 10px dashed rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
     
   }
-  
-  .hero-text {
-    text-align: center;
-    position: relative; /*relative allows this to move relative to where it was by default*/ 
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'Caveat', cursive;
-      border: 2px solid orange; /*TEMP BORDER to be deleted*/
-  }
-
-  .hero-text h1{
-      font-size: 70px;
-      border: 2px dotted rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
-  }
-
-  .hero-text h3{
-      font-size: 40px;
-      border: 10px double rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
-  }
+ 
 
 /*END BACKGROUND IMAGE*/
  
   /*HEADER*/
  header {
-     color: white;
+      color: #e1ebef;
        border: 10px dotted slateblue; /*TEMP BORDER to be deleted*/
       position: relative;      
        text-align: center; /*text in footer will align to the center of the webpage*/
        width: 100%;
        height: 100px;
        margin-top: 50px; /*below navbar*/
+       text-shadow: 8px 6px 9px black;
 
  }
   /*END HEADER*/
@@ -90,8 +89,9 @@ p {
   }
   
   nav li a {
+    text-shadow: 8px 6px 9px black;
     display: inline;
-    color: white;
+    color: #e1ebef;
     font-family: 'Permanent Marker', cursive; 
     font-size: 24px;
     letter-spacing: 2px;
@@ -101,11 +101,11 @@ p {
   }
   
   nav :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
-    background-color: black;
+    background-color:  #061927;
   }
 
   nav li a:hover { /*Pseudo class on hover. Only the relevant nav tab is affected by hover*/
-    color: grey; /*text color changes when the mouse hovers over it*/
+    color:#0a7891; /*text color changes when the mouse hovers over it*/
   }
   /*NAVBAR END*/
   
@@ -122,12 +122,11 @@ p {
 
   /*FOOTER*/
    #footer {
-     color: black;
+     color: #004b62;
      font-family: 'Roboto', sans-serif;
      position: absolute; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
      bottom: 0px;/*the footer moves to the bottom of the parent*/
      display: inline-block; /*keeps element as inline display but allows width and height like a block element*/
-     
      width: 100%;
      height: 200px;
      background-color: transparent;
@@ -135,33 +134,33 @@ p {
       }
     
     #footer :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
-        background-color: black;  
-        color: white;
+        color: #e1ebef;
         width: 100%;
-        height: 200px;
+        height: 100%;
+        background:  #00090f; 
     }
-    
+      
     #footer p {
       text-align: center; /*text in footer paragraph will align to the center*/
+      
     }
+
   /*END FOOTER*/
    /*IMAGES*/
   /*Home Page Portrait Image*/
   #homeportrait {
-    padding-top: 220px;
-    bottom: 0px;/*the image moves to the bottom of the parent*/
-    height: 60%;
-     
+    height: 50%;
+    /*box shadow effect*/
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000; 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000;
+    /*center*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    } 
       
-      
-    }
+    
       
 
-  /*relative 
-      width: 100px;
-      height: 100px; - here width and height are fixed regardless or resizing screen.
-  relative takes the entire view width and view height of the remaining available screen and resizes as screen size changes
-    width: 100w;
-    height: 100vh; so the image gets bigger ans smaller with the screen.*/
 
     
