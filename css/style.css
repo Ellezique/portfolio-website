@@ -5,10 +5,12 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+       border: 2px solid yellow; /*TEMP BORDER to be deleted*/
      }
 
 p {
   font-family: 'Roboto', sans-serif;
+     border: 2px solid green; /*TEMP BORDER to be deleted*/
 }
 
 
@@ -21,6 +23,7 @@ p {
     background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
     background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
     position: relative; 
+       border: 10px dashed rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
     
   }
   
@@ -31,16 +34,18 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-family: 'Caveat', cursive;
+      border: 2px solid rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
   }
 
   .hero-text h1{
-    font-family: 'Condiment', cursive;
     font-size: 70px;
+      border: 2px dotted rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
   }
 
   .hero-text h3{
-    font-family: 'Condiment', cursive;
     font-size: 40px;
+      border: 10px double rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
   }
 
 /*END BACKGROUND IMAGE*/
@@ -48,12 +53,13 @@ p {
   /*HEADER*/
  header {
    color: white;
+    border: 2px dotted slateblue; /*TEMP BORDER to be deleted*/
    
  }
   /*END HEADER*/
 
   /*NAVBAR - nav only*/
-  
+
   nav ul{
     list-style: none;
     margin: 10px;
@@ -61,8 +67,9 @@ p {
     background-color: transparent; /*navbar is transparent so that you can see the background image*/
     position: fixed; /*navbar stays at the top of the page regardless of scrolling*/
     top: 10px;
-    width: 100%;
+    width: 1080px;/*this is the width of my website and background image*/
     overflow: hidden;
+      border: 2px solid red; /*border to show container - to be deleted*/
   }
   
   nav li {
@@ -80,10 +87,13 @@ p {
     text-decoration: none;
   }
   
-  nav li a:hover {
+  nav :hover { /*the entire nav is affected by hover*/
     background-color: black;
   }
 
+  nav li a:hover { /*Only the relevant nav tab is affected by hover*/
+    color: grey; /*text color changes when the mouse hovers over it*/
+  }
   /*NAVBAR END*/
   
 
@@ -98,7 +108,7 @@ p {
 
   /*FOOTER*/
    footer {
-     text-align: center;
+     text-align: center; /*text in footer will align to the center of the webpage*/
      color: white;
      font-family: 'Roboto', sans-serif;
      /*this needs to be moved to to the bottom of the container*/
