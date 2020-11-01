@@ -1,7 +1,17 @@
+/*EXTERNAL STYLESHEET*/
 
-
-
-
+/*NOTES:*/
+/*1. Absolute units (e.g. px) refer to a fixed size. 
+Relative units (e.g %, em, vw, vh) change with regard to the size of a parent element or the screen size.*/
+/*2. Specificity: #id 100points, .class and pseudo take 20points, element tag 1 point*/
+/*3. Block display eg <p> <h1> <div> take up entire width of browser and appear blow each other. 
+Inline display e.g. <a href><span> which only take as much space as content inside of it needs. 
+Inline elements cannot be given width or height.
+Can change display: inline or block. "inline-block" will keep element as inline display but allow width and height like a block element*/
+/*4. RELATIVE of ABSOLUTE. position : relative allows us to move it relative to where it was by default 
+using top/bottom/left/right: 10px etc. other elements not affected.
+position: absolute the element is taken out of the static flow of the document and positions itself relative to its parent, so other elements may move.*/
+/*BOX MODEL: margin etc. are all calculated into width and height unless you add "box-sizing: border-box;"*/
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -18,7 +28,7 @@ p {
   .hero-image {
     background-image: url("../images/ocean13.jpg"); /*image used*/
     background-color: black; /*the background color will display while the image is loading and if the image does not load*/
-    height: 1800px; /*image height set - the image should be resized to this size to save time loading page*/
+    height: 1800px; /*image height set - the image should be sized to this size to save time loading page*/
     background-position: center center; /* the image is positioned in the centre vertically and horizontally always*/
     background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
     background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
@@ -29,22 +39,22 @@ p {
   
   .hero-text {
     text-align: center;
-    position: absolute;
+    position: relative; /*relative allows this to move relative to where it was by default*/ 
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-family: 'Caveat', cursive;
-      border: 2px solid rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
+      border: 2px solid orange; /*TEMP BORDER to be deleted*/
   }
 
   .hero-text h1{
-    font-size: 70px;
+      font-size: 70px;
       border: 2px dotted rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
   }
 
   .hero-text h3{
-    font-size: 40px;
+      font-size: 40px;
       border: 10px double rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
   }
 
@@ -52,22 +62,25 @@ p {
  
   /*HEADER*/
  header {
-   color: white;
-    border: 2px dotted slateblue; /*TEMP BORDER to be deleted*/
-   
+     color: white;
+       border: 10px dotted slateblue; /*TEMP BORDER to be deleted*/
+      position: relative;      
+       text-align: center; /*text in footer will align to the center of the webpage*/
+       width: 100%;
+       height: 100px;
+       margin-top: 50px; /*below navbar*/
+
  }
   /*END HEADER*/
 
   /*NAVBAR - nav only*/
 
   nav ul{
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
+    list-style: none; /*removes default dots marking list items*/
     background-color: transparent; /*navbar is transparent so that you can see the background image*/
     position: fixed; /*navbar stays at the top of the page regardless of scrolling*/
-    top: 10px;
-    width: 1080px;/*this is the width of my website and background image*/
+    top: 0px;
+    width: 100vw;/*this is the width of my website and background image*/
     overflow: hidden;
       border: 2px solid red; /*border to show container - to be deleted*/
   }
@@ -87,11 +100,11 @@ p {
     text-decoration: none;
   }
   
-  nav :hover { /*the entire nav is affected by hover*/
+  nav :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
     background-color: black;
   }
 
-  nav li a:hover { /*Only the relevant nav tab is affected by hover*/
+  nav li a:hover { /*Pseudo class on hover. Only the relevant nav tab is affected by hover*/
     color: grey; /*text color changes when the mouse hovers over it*/
   }
   /*NAVBAR END*/
@@ -99,25 +112,56 @@ p {
 
   /*PAGES OTHER THAN HOME PAGE*/
 
- main {   
-    color: white;
-    padding: 40px; /*without padding, the content in the container overlaps with the navbar*/
+ main {  
+  padding: 10px;
+  height: 77%;
+    border: 10px solid lightcoral; /*border to show container - to be deleted*/
     
-    
-  }
+
+ }
 
   /*FOOTER*/
-   footer {
-     text-align: center; /*text in footer will align to the center of the webpage*/
-     color: white;
+   #footer {
+     color: black;
      font-family: 'Roboto', sans-serif;
-     /*this needs to be moved to to the bottom of the container*/
-   }
-
+     position: absolute; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
+     bottom: 0px;/*the footer moves to the bottom of the parent*/
+     display: inline-block; /*keeps element as inline display but allows width and height like a block element*/
+     
+     width: 100%;
+     height: 200px;
+     background-color: transparent;
+        border: 5px solid purple; /*border to show container - to be deleted*/
+      }
+    
+    #footer :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
+        background-color: black;  
+        color: white;
+        width: 100%;
+        height: 200px;
+    }
+    
+    #footer p {
+      text-align: center; /*text in footer paragraph will align to the center*/
+    }
+  /*END FOOTER*/
    /*IMAGES*/
+  /*Home Page Portrait Image*/
+  #homeportrait {
+    padding-top: 220px;
+    bottom: 0px;/*the image moves to the bottom of the parent*/
+    height: 60%;
+     
+      
+      
+    }
+      
 
- img .large {   /*the image is not displaying and this needs to be fixed*/
-  position: relative;  
-  height: 50%;
-  
- }
+  /*relative 
+      width: 100px;
+      height: 100px; - here width and height are fixed regardless or resizing screen.
+  relative takes the entire view width and view height of the remaining available screen and resizes as screen size changes
+    width: 100w;
+    height: 100vh; so the image gets bigger ans smaller with the screen.*/
+
+    
