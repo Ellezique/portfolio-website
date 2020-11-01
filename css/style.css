@@ -68,8 +68,37 @@ h1 {
        height: 100px;
        margin-top: 50px; /*below navbar*/
        text-shadow: 8px 6px 9px black;
-
  }
+
+ /*wave animation*/
+.wavy {  /*reflection*/
+  position: relative;
+  -webkit-box-reflect: below -22px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  animation: animate 10s ease-in-out infinite; 
+  animation-delay: calc(0.5s * var(--w));
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: translateY(0px);
+  }
+  20%
+  {
+    transform: translateY(-20px);
+  }
+  40%, 100%
+  {
+    transform: translateY(0px);
+  }
+}
+/*end wave animation*/
+
   /*END HEADER*/
 
   /*NAVBAR - nav only*/
