@@ -7,187 +7,216 @@ Relative units (e.g %, em, vw, vh) change with regard to the size of a parent el
 /*3. Block display eg <p> <h1> <div> take up entire width of browser and appear blow each other. 
 Inline display e.g. <a href><span> which only take as much space as content inside of it needs. 
 Inline elements cannot be given width or height.
-Can change display: inline or block. "inline-block" will keep element as inline display but allow width and height like a block element*/
+Can change display: inline or block. "inline-block" will keep element as inline display but allow width and height like a block element
+and will also wrap the content in that inline-block if screen size changes*/
 /*4. RELATIVE of ABSOLUTE. position : relative allows us to move it relative to where it was by default 
 using top/bottom/left/right: 10px etc. other elements not affected.
 position: absolute the element is taken out of the static flow of the document and positions itself relative to its parent, so other elements may move.*/
 /*BOX MODEL: margin etc. are all calculated into width and height unless you add "box-sizing: border-box;"*/
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-       border: 2px solid yellow; /*TEMP BORDER to be deleted*/
+/*RESPONSIVE DESIGN - different sized devices
+1. Using pixels creates a static size. Percentages make images more responsiveto screen size
+2. Wrap content (text wraps automatically) - can use inline-block
+3. Media break points
+4. Flexbox. 
+  Container "display: flex;" stretch and squish with screen size XY. 
+  "Flex-direction: row/column;" 
+  "flex-wrap: wrap;"  Wrap not squish
+  ROW "justify-content: center or flex-start/end or space-around (spaced evenly) or space-between (space between)" allows positioning on main axis column or row.
+    Remove container height if possible so itmes take the space they need. 
+    If there is a height, the wrapped elements may spread to fill space.
+  COLUMN "align-items: center or flex-start/end" align items in row axis. 
+*/
+
+html, body {
+  width: 100%;
+  height: 100%; /*The size of the browser window - changes as browser bigger or smaller*/
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color:#abe3e4; /*Changes burger color*/
+    border: 2px solid yellow; /*TEMP BORDER to be deleted*/
+    box-sizing: border-box; /*TEMP BORDER to be deleted*/
+}
+
+html {
+  font-family: 'Roboto', sans-serif; /*If the browser does not support the first font, it will default to the second*/
      }
 
-p {
-  font-family: 'Roboto', sans-serif;
-     border: 2px solid green; /*TEMP BORDER to be deleted*/
+main { /*The main section is a fexbox, with a column direction aligning from the top*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 h1 {
-    text-shadow: 5px 5px 15px black;
-    font-size: 80px;
+  text-shadow: 5px 5px 15px black;
+  font-size: 80px;
+  text-align: center;
+  color: #e1ebef;
+  font-family: 'Caveat', cursive;
+        border: 2px solid orange; /*TEMP BORDER to be deleted*/ 
+        box-sizing: border-box; /*TEMP BORDER to be deleted*/
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive; 
+}
+
+h3 {
+  text-shadow: 8px 6px 9px black;
+  text-shadow: 5px 5px 15px black;
+  font-size: 50px; 
+  text-align: center;
+  color: #e1ebef;
+  font-family: 'Caveat', cursive;
+    border: 2px solid orange; /*TEMP BORDER to be deleted*/
+    box-sizing: border-box; /*TEMP BORDER to be deleted*/
+}
+       /*wave animation*/
+            .wavy {  /*reflection*/
+              position: relative;
+              -webkit-box-reflect: below -22px linear-gradient(transparent, rgba(0,0,0,0.2));
+            }
+
+            .wavy span {
+              color: #e1ebef;
+              position: relative;
+              display: inline-block;
+              animation: animate 10s ease-in-out infinite; 
+              animation-delay: calc(0.5s * var(--w));
+            }
+
+            @keyframes animate {
+              0%
+              {
+                transform: translateY(0px);
+              }
+              20%
+              {
+                transform: translateY(-20px);
+              }
+              40%, 100%
+              {
+                transform: translateY(0px);
+              }
+            }
+            /*end wave animation*/
+
+.textbox {
+color: #00263d ;  
+background-color: #e1ebef; 
+padding: 5px; 
+margin-top: 15px;
+margin-bottom: 15px;
+position: inline-block;
+  
+  border: 2px solid orangered;/*TEMP BORDER to be deleted*/
+    box-sizing: border-box; /*TEMP BORDER to be deleted*/
+}
+
+p {
+     border: 2px solid green; /*TEMP BORDER to be deleted*/
+     box-sizing: border-box; /*TEMP BORDER to be deleted*/
+}
+
+/*NAVBAR with HAMBURGER*/
+
+.nav { /*HAMBURGER*/
+  font-family: 'Permanent Marker', cursive;  
+  border-bottom: 1px solid #004b62;
     text-align: center;
-    color: #e1ebef;
-    font-family: 'Caveat', cursive;
-      border: 2px solid orange; /*TEMP BORDER to be deleted*/
-  }
+    height: 70px;
+    line-height: 65px;
+    /*position: fixed; /*navbar stays at the top of the page regardless of scrolling*/
+          border: 2px solid red; /*border to show container - to be deleted*/
+          box-sizing: border-box; /*TEMP BORDER to be deleted*/
+  }  
 
-  h3 {
-    text-shadow: 8px 6px 9px black;
-    text-shadow: 5px 5px 15px black;
-    font-size: 50px; 
-    text-align: center;
-    color: #e1ebef;
-    font-family: 'Caveat', cursive;
-      border: 2px solid orange; /*TEMP BORDER to be deleted*/
-  }
-
-  /*BACKGROUND IMAGE*/
-  .hero-image {
-    background-image: url("../images/ocean13.jpg"); /*image used*/
-    background-color: black; /*the background color will display while the image is loading and if the image does not load*/
-    height: 1800px; /*image height set - the image should be sized to this size to save time loading page*/
-    background-position: center center; /* the image is positioned in the centre vertically and horizontally always*/
-    background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
-    background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
-    position: relative; 
-       border: 10px dashed rgb(128, 17, 17); /*TEMP BORDER to be deleted*/
-    
-  }
- 
-
-/*END BACKGROUND IMAGE*/
- 
-  /*HEADER*/
- header {
-      color: #e1ebef;
-       border: 10px dotted slateblue; /*TEMP BORDER to be deleted*/
-      position: relative;      
-       text-align: center; /*text in footer will align to the center of the webpage*/
-       width: 100%;
-       height: 100px;
-       margin-top: 50px; /*below navbar*/
-       text-shadow: 8px 6px 9px black;
- }
-
- /*wave animation*/
-.wavy {  /*reflection*/
-  position: relative;
-  -webkit-box-reflect: below -22px linear-gradient(transparent, rgba(0,0,0,0.2));
-}
-
-.wavy span {
-  position: relative;
-  display: inline-block;
-  animation: animate 10s ease-in-out infinite; 
-  animation-delay: calc(0.5s * var(--w));
-}
-
-@keyframes animate {
-  0%
-  {
-    transform: translateY(0px);
-  }
-  20%
-  {
-    transform: translateY(-20px);
-  }
-  40%, 100%
-  {
-    transform: translateY(0px);
-  }
-}
-/*end wave animation*/
-
-  /*END HEADER*/
-
-  /*NAVBAR - nav only*/
-
-  nav ul{
-    list-style: none; /*removes default dots marking list items*/
-    background-color: transparent; /*navbar is transparent so that you can see the background image*/
-    position: fixed; /*navbar stays at the top of the page regardless of scrolling*/
-    top: 0px;
-    width: 100vw;/*this is the width of my website and background image*/
-    overflow: hidden;
-      border: 2px solid red; /*border to show container - to be deleted*/
+  .menu {
+    position: absolute;/*absolute position removes the burger menu from the flow so that it is on top of elements beneath it*/
+    position: fixed; /*navbar remains fixed at the top of the display regardless of scrolling*/
+    display: block;
+    width: 100%; /*navbar background color extends the full width available*/
+    margin: 0 0 0 0; /*--30px margin to the right. 0 elsewhere.*/
+    background-color:#061927; opacity:0.95; /*Very slight navbar opacity*/
   }
   
-  nav li {
-    float: left; /*navbar stays on the left of its container*/
-  }
-  
-  nav li a {
-    text-shadow: 8px 6px 9px black;
-    display: inline;
-    color: #e1ebef;
-    font-family: 'Permanent Marker', cursive; 
-    font-size: 24px;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 14px 16px;
+  .menu a {
+    clear: right;
     text-decoration: none;
+    color: #e1ebef;
+    margin: 0 10px; /*0px on top. 10px left and right.*/
+    line-height: 40px; /*When burger and checkbox are hidden, the menu will be at the top of the page*/
+    text-shadow: 8px 6px 9px black;
+    font-size: 18px;
+    letter-spacing: 4px;          
+  }
+
+  
+  label {
+    font-size: 26px;
+    line-height: 70px;
+    display: none; /*This hides label*/
+    width: 26px;
+    position: fixed; /*Burger remains fixed at the top of the display regardless of scrolling*/
   }
   
-  nav :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
-    background-color:  #061927;
+  #toggle {
+    display: none; /*hidden*/    
   }
+              /*HOVER EFFECTS for .NAV*/
+            .nav :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
+              background-color: #012a40;
+              }
 
-  nav li a:hover { /*Pseudo class on hover. Only the relevant nav tab is affected by hover*/
-    color:#0a7891; /*text color changes when the mouse hovers over it*/
-  }
-  /*NAVBAR END*/
+              .nav a:hover { /*Pseudo class on hover. Only the relevant nav tab is affected by hover*/
+              color:#0a7891;} /*text color changes when the mouse hovers over it*/
+              
+              /*NAVBAR END*/
   
-
-  /*PAGES OTHER THAN HOME PAGE*/
-
- main {  
-  padding: 10px;
-  height: 77%;
-    border: 10px solid lightcoral; /*border to show container - to be deleted*/
-    
-
- }
-
-  /*FOOTER*/
-   #footer {
-     color: #004b62;
-     font-family: 'Roboto', sans-serif;
-     position: absolute; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
-     bottom: 0px;/*the footer moves to the bottom of the parent*/
-     display: inline-block; /*keeps element as inline display but allows width and height like a block element*/
-     width: 100%;
-     height: 200px;
-     background-color: transparent;
-        border: 5px solid purple; /*border to show container - to be deleted*/
-      }
-    
-    #footer :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
-        color: #e1ebef;
-        width: 100%;
-        height: 100%;
-        background:  #00090f; 
-      /*box shadow effect*/
-      -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000; 
-      box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000;
-      /*time*/
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+/*MEDIA BREAKPOINT: when screen is less than max width, the font size will respond. Otherwise default p size */
+ 
+@media screen and (max-width: 500px) { /*This styling applies when the browser size is 500 or less*/
+    p {
+  font-size: 20px;
     }
-      
-    #footer p {
-      text-align: center; /*text in footer paragraph will align to the center*/
-      
-    }
+  .hero-image {
+    height: auto;  /*If the screen is smaller than max-width, the image will resize automatically*/
+  }
+  /*Below for burger menu*/
+  label{
+    display: block;
+    cursor: pointer; /*The cursor will change to a pointer to show the user they are hovering over a link*/
 
-  /*END FOOTER*/
-   /*IMAGES*/
-  /*Home Page Portrait Image*/
+    text-align: center;
+    width: 100%; /*navbar background color extends the full width available*/
+    margin: 0 0 0 0; 
+    background-color:#061927; opacity:0.95; /*Very slight navbar opacity*/
+   
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none; /*Hidden*/
+    
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #57c7c8;
+    margin: 0;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    
+  }
+}
+/*End burger menu*/
+/*END MEDIA BREAKPOINT*/
+
+
+/*IMAGES*/
+/*Home Page Portrait Image*/
   #homeportrait {
-    height: 50%;
+    height: 70vh;
     /*box shadow effect*/
     -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000; 
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000;
@@ -212,4 +241,41 @@ h1 {
             transform: scale(0.9, 0.9);
   }
 
-    
+
+
+/*BACKGROUND IMAGE*/
+  .hero-image {
+    background-image: url("../images/ocean13.jpg"); /*image used*/
+    background-color: black; /*the background color will display while the image is loading and if the image does not load*/
+    height: 1400px; /*image height set - the image should be sized to this size to save time loading page*/
+    background-position: center center; /* the image is positioned in the centre vertically and horizontally always*/
+    background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
+    background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
+    position: relative; 
+  }
+/*END BACKGROUND IMAGE*/
+
+
+
+/*FOOTER*/
+#footer {
+  color: #004b62;
+  font-family: 'Roboto', sans-serif;
+  position: relative; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
+  bottom: 0px;/*the footer moves to the bottom of the parent*/
+  display: inline-block; /*keeps element as inline display but allows width and height like a block element*/
+  width: 100%;
+  height: 200px;
+  background-color:  #00090f;
+  color: #e1ebef;
+     border: 5px solid purple; /*border to show container - to be deleted*/
+     box-sizing: border-box; /*TEMP BORDER to be deleted*/
+   }
+   
+ #footer p {
+   text-align: center; /*text in footer paragraph will align to the center*/
+ }
+
+/*END FOOTER*/
+
+
