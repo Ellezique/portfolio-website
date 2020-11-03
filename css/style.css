@@ -4,14 +4,15 @@
 /*1. Absolute units (e.g. px) refer to a fixed size. 
 Relative units (e.g %, em, vw, vh) change with regard to the size of a parent element or the screen size.*/
 /*2. Specificity: #id 100points, .class and pseudo take 20points, element tag 1 point*/
-/*3. Block display eg <p> <h1> <div> take up entire width of browser and appear blow each other. 
+/*3. Block display eg <p> <h1> <div> take up entire width of browser and appear below each other. 
 Inline display e.g. <a href><span> which only take as much space as content inside of it needs. 
 Inline elements cannot be given width or height.
 Can change display: inline or block. "inline-block" will keep element as inline display but allow width and height like a block element
 and will also wrap the content in that inline-block if screen size changes*/
 /*4. RELATIVE of ABSOLUTE. position : relative allows us to move it relative to where it was by default 
 using top/bottom/left/right: 10px etc. other elements not affected.
-position: absolute the element is taken out of the static flow of the document and positions itself relative to its parent, so other elements may move.*/
+position: absolute the element is taken out of the static flow of the document and positions itself relative to its parent, 
+so other elements may move.*/
 /*BOX MODEL: margin etc. are all calculated into width and height unless you add "box-sizing: border-box;"*/
 /*RESPONSIVE DESIGN - different sized devices
 1. Using pixels creates a static size. Percentages make images more responsiveto screen size
@@ -27,6 +28,7 @@ position: absolute the element is taken out of the static flow of the document a
   COLUMN "align-items: center or flex-start/end" align items in row axis. 
 */
 
+
 html, body {
   width: 100%;
   height: 100%; /*The size of the browser window - changes as browser bigger or smaller*/
@@ -39,13 +41,31 @@ html, body {
 
 html {
   font-family: 'Roboto', sans-serif; /*If the browser does not support the first font, it will default to the second*/
-     }
+  background-color: ;  
+}
 
 main { /*The main section is a fexbox, with a column direction aligning from the top*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
+.textbox {
+  color: #00263d ;  
+  background-color: #e1ebef; 
+  padding: 5px; 
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: inline-block; 
+    border: 2px solid orangered;/*TEMP BORDER to be deleted*/
+      box-sizing: border-box; /*TEMP BORDER to be deleted*/
+  }
+  
+  p {
+       border: 2px solid green; /*TEMP BORDER to be deleted*/
+       box-sizing: border-box; /*TEMP BORDER to be deleted*/
+  }
+  
 
 h1 {
   text-shadow: 5px 5px 15px black;
@@ -101,26 +121,12 @@ h3 {
             }
             /*end wave animation*/
 
-.textbox {
-color: #00263d ;  
-background-color: #e1ebef; 
-padding: 5px; 
-margin-top: 15px;
-margin-bottom: 15px;
-position: inline-block;
-  
-  border: 2px solid orangered;/*TEMP BORDER to be deleted*/
-    box-sizing: border-box; /*TEMP BORDER to be deleted*/
-}
-
-p {
-     border: 2px solid green; /*TEMP BORDER to be deleted*/
-     box-sizing: border-box; /*TEMP BORDER to be deleted*/
-}
 
 /*NAVBAR with HAMBURGER*/
 
 .nav { /*HAMBURGER*/
+  position: relative; /*Adding a poition did not change the stacking order issue with animations and transitions.*/
+  z-index: 2; /*Adding a z-index in additin to position: relative, moves the navbar on top of the animations/transitions*/
   font-family: 'Permanent Marker', cursive;  
   border-bottom: 1px solid #004b62;
     text-align: center;
@@ -129,7 +135,7 @@ p {
     /*position: fixed; /*navbar stays at the top of the page regardless of scrolling*/
           border: 2px solid red; /*border to show container - to be deleted*/
           box-sizing: border-box; /*TEMP BORDER to be deleted*/
-  }  
+        }  
 
   .menu {
     position: absolute;/*absolute position removes the burger menu from the flow so that it is on top of elements beneath it*/
@@ -171,7 +177,7 @@ p {
               .nav a:hover { /*Pseudo class on hover. Only the relevant nav tab is affected by hover*/
               color:#0a7891;} /*text color changes when the mouse hovers over it*/
               
-              /*NAVBAR END*/
+/*NAVBAR END*/
   
 /*MEDIA BREAKPOINT: when screen is less than max width, the font size will respond. Otherwise default p size */
  
@@ -213,6 +219,28 @@ p {
 /*END MEDIA BREAKPOINT*/
 
 
+
+
+
+
+/*CONTAINERS AND BOXES FOR PAGES*/
+.container { 
+  padding: 0 0 0 0;
+        border: 2px solid lightblue;/*TEMP BORDER to be deleted*/
+        background-color: lightpink;
+        box-sizing: border-box; /*TEMP BORDER to be deleted*/
+ }
+
+ 
+
+/*END HEADER FOR PAGES*/
+
+
+
+
+
+
+
 /*IMAGES*/
 /*Home Page Portrait Image*/
   #homeportrait {
@@ -222,36 +250,74 @@ p {
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000;
     /*center*/
     display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*round image corners*/
+    border-radius: 5px;
+    /*The transition is only active when there is a hover so the below is only activiated on hover.*/
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+      -o-transition: all 2s ease;
+     -ms-transition: all 2s ease;
+         transition: all 2s ease;
+    } 
+      
+        #homeportrait:hover { 
+          -webkit-filter: saturate(50%); /*drains color from image*/
+          /*When the transition placed in this section, the image jolts back to position and color as soon as hover ends. 
+          To allow for a smooth transition back to position after hover ends, 
+          the transition has been moved to #homeportrait*/
+                  -webkit-transform: scale(1.5, 1.5);
+                  -moz-transform: scale(1.5, 1.5);
+                  -o-transform: scale(1.5, 1.5);
+                  transform: scale(0.9, 0.9);
+
+
+        }
+
+
+  #footerportrait {
+    height: 110px;
+    /*center*/
+    display: block;
     margin-left: auto;
     margin-right: auto;
     /*round image corners*/
     border-radius: 5px;
     } 
-      
-  #homeportrait:hover {
-    -webkit-filter: saturate(50%); /*drains color from image but not black and white*/
-    -webkit-transition: all 2s ease;
-       -moz-transition: all 2s ease;
-         -o-transition: all 2s ease;
-        -ms-transition: all 2s ease;
-            transition: all 2s ease;
-            -webkit-transform: scale(1.5, 1.5);
-            -moz-transform: scale(1.5, 1.5);
-            -o-transform: scale(1.5, 1.5);
-            transform: scale(0.9, 0.9);
+
+
+  #portfolio-images { /*Coming Soon*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    border: 0.5px solid black;
+    /*round image corners*/
+    border-radius: 5px;
   }
 
 
 
 /*BACKGROUND IMAGE*/
   .hero-image {
-    background-image: url("../images/ocean13.jpg"); /*image used*/
+    background-image: url("../images/ocean13.jpg"); 
     background-color: black; /*the background color will display while the image is loading and if the image does not load*/
     height: 1400px; /*image height set - the image should be sized to this size to save time loading page*/
     background-position: center center; /* the image is positioned in the centre vertically and horizontally always*/
     background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
     background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
     position: relative; 
+  }
+
+  #header-image {
+    background-image: url("../images/ocean13.jpg"); 
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 300px;
   }
 /*END BACKGROUND IMAGE*/
 
