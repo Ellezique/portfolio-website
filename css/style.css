@@ -35,37 +35,36 @@ html, body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color:#abe3e4; /*Changes burger color*/
+  background-color: #0a7891;
     border: 2px solid yellow; /*TEMP BORDER to be deleted*/
     box-sizing: border-box; /*TEMP BORDER to be deleted*/
 }
 
 html {
   font-family: 'Roboto', sans-serif; /*If the browser does not support the first font, it will default to the second*/
-  background-color: ;  
 }
 
-main { /*The main section is a fexbox, with a column direction aligning from the top*/
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
-.textbox {
+/* SECTION START*/
+
+.textbox { /*This is a misnomer.*/
+  /*https://www.webdesignerdepot.com/2018/09/grid-vs-flexbox-which-should-you-choose/  
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion*/
   color: #00263d ;  
   background-color: #e1ebef; 
-  padding: 5px; 
-  margin-top: 15px;
-  margin-bottom: 15px;
-  position: inline-block; 
+  padding: 20px; 
+  margin-top: 20px;
     border: 2px solid orangered;/*TEMP BORDER to be deleted*/
       box-sizing: border-box; /*TEMP BORDER to be deleted*/
   }
-  
+
+ 
+ /* SECTION END*/
   p {
        border: 2px solid green; /*TEMP BORDER to be deleted*/
        box-sizing: border-box; /*TEMP BORDER to be deleted*/
   }
-  
 
 h1 {
   text-shadow: 5px 5px 15px black;
@@ -121,7 +120,16 @@ h3 {
             }
             /*end wave animation*/
 
-
+h4 {
+  text-shadow: 5px 5px 15px black;
+  font-size: 40px;
+  text-align: center;
+  color: #e1ebef;
+  background-color: #004b62;
+  font-family: 'Caveat', cursive;
+        border: 2px solid orange; /*TEMP BORDER to be deleted*/ 
+        box-sizing: border-box; /*TEMP BORDER to be deleted*/
+}
 /*NAVBAR with HAMBURGER*/
 
 .nav { /*HAMBURGER*/
@@ -180,9 +188,9 @@ h3 {
 /*NAVBAR END*/
   
 /*MEDIA BREAKPOINT: when screen is less than max width, the font size will respond. Otherwise default p size */
- 
+
 @media screen and (max-width: 500px) { /*This styling applies when the browser size is 500 or less*/
-    p {
+  p {
   font-size: 20px;
     }
   .hero-image {
@@ -219,25 +227,50 @@ h3 {
 /*END MEDIA BREAKPOINT*/
 
 
-
-
-
-
-/*CONTAINERS AND BOXES FOR PAGES*/
+/*HEADER CONTAINER FOR PAGES OTHER THAN HOME*/
 .container { 
   padding: 0 0 0 0;
         border: 2px solid lightblue;/*TEMP BORDER to be deleted*/
         background-color: lightpink;
         box-sizing: border-box; /*TEMP BORDER to be deleted*/
  }
+/*END HEADER */
 
- 
+/*BLOG PAGE START*/
 
-/*END HEADER FOR PAGES*/
+/* Two unequal columns floating next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 20%; /*consider increasing to 25% once borders removed*/
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 80%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
 
 
 
 
+
+/*BLOG PAGE END*/
 
 
 
@@ -290,12 +323,7 @@ h3 {
 
 
   #portfolio-images { /*Coming Soon*/
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 200px;
-    border: 0.5px solid black;
-    /*round image corners*/
-    border-radius: 5px;
+   
   }
 
 
