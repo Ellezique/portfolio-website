@@ -1,2 +1,64 @@
 <!--Your name and contact details-->
 <!--Links to professional accounts such as Github and LinkedIn-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Gizelle's Portfolio</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!--HAMBRGER MENU AND NAVBAR-->
+        <div class="nav"> 
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <nav class="menu"> <!--HAMBURGER ADDED CLASS MENU-->
+                <a href="index.html">HOME</a>
+                <a href="blogposts.html">BLOG</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="contact.html"class="active">CONTACT</a>
+            </nav>
+        </div>
+            
+        <header class="container" id="header-image"> 
+                <h1>Contact</h1>   
+        </header> 
+        <main>
+            <section class="textbox">
+                    <h4>Contact Form</h4>
+                    <form action="#" name="contact_form">
+                        <label for="first_name">First Name</label>
+                        <input name="first_name" type="text" required placeholder="First name"/>
+                        <br>
+                        <label for="last_name">Last Name</label>
+                        <input name="last_name" type="text" required placeholder="Last name"/>
+                        <br>
+                        <label for="email">Email</label>
+                        <input name="email" type="email" required placeholder="example@domain.com"/>
+                        <br>
+                        <label for="message">Message</label><br>
+                        <textarea name="message" cols="40" rows="20" placeholder="Enter your message here ..." required> </textarea>
+                        <div class="center">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>	
+            </section>
+                
+
+
+
+        </main>       
+        <footer id="footer">
+            <img src="images/portrait653.jpg" id="footerportrait" alt="Watercolor Portrait">  
+            <p><b>&#169; 2020 Gizelle van Zyl.</b></p>
+        </footer>
+    </body>
+</html>
