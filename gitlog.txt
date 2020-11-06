@@ -1,0 +1,89 @@
+commit d3b46221aca0ce00c506a31602870ac4add3d91c
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 5 10:00:03 2020 +1000
+
+    Commit styling on contact form
+
+commit 863e799e27e2bfd831d564a86e947b969903d566
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Wed Nov 4 18:47:09 2020 +1000
+
+    Commit draft contact page with contact form
+
+commit 5ab1d8661e547decc1dc2d05b1aa9cfc41fccc3d
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Wed Nov 4 16:15:18 2020 +1000
+
+    Commit blog page with links to posts in page
+
+commit 88f67ae9b42b6d12ed34eabc716021c547a41607
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 3 22:34:09 2020 +1000
+
+    Commit portfolio page and use z-index to fix stacking order of nav bar and transition/animation
+
+commit 887c65b8ebac9117b755064164b9c8c6d59593cb
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Mon Nov 2 23:21:20 2020 +1000
+
+    Commit hamburger menu, changes to responsive design and containers, insert flexbox
+
+commit f10dcdaf3e9e61c9c87265ff4b75a1c196656fce
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Mon Nov 2 00:32:18 2020 +1000
+
+    Commit transitions and filters for home page
+
+commit cdab9b12289f23f97fffb335e93327a196b69804
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 1 23:54:01 2020 +1000
+
+    Commit text wave animation
+
+commit c76823d1ca325ccd391071f56c38ba2d2b632e6e
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 1 22:40:25 2020 +1000
+
+    Commit ocean pallette and shadows in stylesheet
+
+commit 3e090b5d854c80931926ff073abcb317e5285ca7
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 1 21:08:55 2020 +1000
+
+    Commit added border boxes, comments and created gitlog
+
+commit 0ffa4381eec05f90f49800a04f051488a3113b26
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 1 11:47:00 2020 +1000
+
+    Commit new h1 h2 font. Nav bar hover styling changed. Temporary borders inserted.
+
+commit 2188a9ce4199f39478d46acd2e7d1f573b543684
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 21:39:10 2020 +1000
+
+    Commit inserting watercolor portrait image but changes needed to ensure image is displayed
+
+commit b20c5d34b226010046583a2ebfc995b4bfb1ef9d
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 20:53:03 2020 +1000
+
+    Third Commit font selection and assignment notes
+
+commit e744dafb65976507da2d17cac25715814f549718
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 19:09:25 2020 +1000
+
+    Third Commit create navbar and link pages
+
+commit 1b8e180237d8941957aaa2b8222e68aee90994ab
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 17:48:56 2020 +1000
+
+    Second commit from master branch adding background image on css stylesheet
+
+commit fbba5ba2857d97eac9633c016a286728d895854c
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 15:00:02 2020 +1000
+
+    First commit from master branch
