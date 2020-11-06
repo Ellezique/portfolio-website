@@ -265,79 +265,112 @@ h4 {
     padding: 0;
   }
 }
-
-
-
-
-
 /*BLOG PAGE END*/
+
+
+
+
+/*CONTACT FORM START*/
+input[type=text], input[type=email], select, textarea  {
+  width: 80%; /* Full width */
+  padding: 15px; /* Some padding */ 
+  border: 1px solid #0a7891; /* Gray border */
+  border-radius: 5px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 5px; /* Add a top margin */
+  margin-bottom: 15px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: 'Roboto', sans-serif;
+  color: #00090f;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #0a7891;
+  color:  #abe3e4;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #004b62;
+}
+}
+
+/* Add a background color and some padding around the form */
+form {
+  border-radius: 5px;
+  background-color: #e1ebef;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+/*CONTACT FORM END*/
 
 
 
 /*IMAGES*/
 /*Home Page Portrait Image*/
-  #homeportrait {
-    height: 70vh;
-    /*box shadow effect*/
-    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000; 
-    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000;
-    /*center*/
-    display: block;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+#homeportrait {
+  height: 70vh;
+  /*box shadow effect*/
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000; 
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000;
+  /*center*/
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 
-    /*round image corners*/
-    border-radius: 5px;
-    /*The transition is only active when there is a hover so the below is only activiated on hover.*/
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-      -o-transition: all 2s ease;
-     -ms-transition: all 2s ease;
-         transition: all 2s ease;
-    } 
-      
-        #homeportrait:hover { 
-          -webkit-filter: saturate(50%); /*drains color from image*/
-          /*When the transition placed in this section, the image jolts back to position and color as soon as hover ends. 
-          To allow for a smooth transition back to position after hover ends, 
-          the transition has been moved to #homeportrait*/
-                  -webkit-transform: scale(1.5, 1.5);
-                  -moz-transform: scale(1.5, 1.5);
-                  -o-transform: scale(1.5, 1.5);
-                  transform: scale(0.9, 0.9);
-
-
-        }
-
-  #portfolio-images { /*Coming Soon*/
-   
-  }
+  /*round image corners*/
+  border-radius: 5px;
+  /*The transition is only active when there is a hover so the below is only activiated on hover.*/
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+   -ms-transition: all 2s ease;
+       transition: all 2s ease;
+  } 
+    
+      #homeportrait:hover { 
+        -webkit-filter: saturate(50%); /*drains color from image*/
+        /*When the transition placed in this section, the image jolts back to position and color as soon as hover ends. 
+        To allow for a smooth transition back to position after hover ends, 
+        the transition has been moved to #homeportrait*/
+                -webkit-transform: scale(1.5, 1.5);
+                -moz-transform: scale(1.5, 1.5);
+                -o-transform: scale(1.5, 1.5);
+                transform: scale(0.9, 0.9);
 
 
+      }
+
+#portfolio-images { /*Coming Soon*/
+ 
+}
 
 /*BACKGROUND IMAGE*/
-  .hero-image {
-    background-image: url("../images/ocean13.jpg"); 
-    background-color: black; /*the background color will display while the image is loading and if the image does not load*/
-    height: 1400px; /*image height set - the image should be sized to this size to save time loading page*/
-    background-position: center center; /* the image is positioned in the centre vertically and horizontally always*/
-    background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
-    background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
-    position: relative; 
-  }
+.hero-image {
+  background-image: url("../images/ocean13.jpg"); 
+  background-color: black; /*the background color will display while the image is loading and if the image does not load*/
+  height: 1400px; /*image height set - the image should be sized to this size to save time loading page*/
+  background-position: center center; /* the image is positioned in the centre vertically and horizontally always*/
+  background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
+  background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
+  position: relative; 
+}
 
-  #header-image {
-    background-image: url("../images/ocean13.jpg"); 
-    background-color: black;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 300px;
-  }
+#header-image {
+  background-image: url("../images/ocean13.jpg"); 
+  background-color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 300px;
+}
 /*END BACKGROUND IMAGE*/
-
-
 
 /*FOOTER*/
 #footer {
@@ -391,50 +424,3 @@ h4 {
    height: 64px;
  }
 /*END FOOTER*/
-
-
-
-
-
-/*CONTACT FORM START*/
-input[type=text], input[type=email], select, textarea  {
-  width: 100%; /* Full width */
-  padding: 15px; /* Some padding */ 
-  border: 1px solid #0a7891; /* Gray border */
-  border-radius: 5px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 5px; /* Add a top margin */
-  margin-bottom: 15px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  font-family: 'Roboto', sans-serif;
-  color: #00090f;
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #0a7891;
-  color:  #abe3e4;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #004b62;
-}
-}
-
-/* Add a background color and some padding around the form */
-form {
-  border-radius: 5px;
-  background-color: #e1ebef;
-  padding: 20px;
-  font-family: 'Roboto', sans-serif;
-}
-
-
-/*CONTACT FORM END*/
-
-
