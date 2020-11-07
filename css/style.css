@@ -387,6 +387,11 @@ form {
 
       }
 
+#githubblack {
+  border-radius: 50%; /*This changes the square image into a rounded circle*/
+}
+
+
 #portfolio-images { /*Coming Soon*/
  
 }
