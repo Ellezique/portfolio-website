@@ -17,53 +17,86 @@ Actual links to linkedin and Github should be included though.-->
     </head>
     
     <body>
-        <!--HAMBRGER MENU AND NAVBAR-->
-        <div class="nav"> 
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-            <nav class="menu"> <!--HAMBURGER ADDED CLASS MENU-->
-                <a href="index.html">HOME</a>
-                <a href="blogposts.html">BLOG</a>
-                <a href="portfolio.html">PORTFOLIO</a>
-                <a href="contact.html"class="active">CONTACT</a>
-            </nav>
-        </div>
-            
-        <header class="container" id="header-image"> 
-                <h1>Contact</h1>   
-        </header> 
-        <main class="contact-container">
-                <div class="form">
-                    <div class="textbox">
-                        <h4>Contact Form</h4>
-                        <form action="#" name="contact_form">
-                            <label for="first_name">First Name</label>
-                            <input name="first_name" type="text" required placeholder="First name"/>
-                            <br>
-                            <label for="last_name">Last Name</label>
-                            <input name="last_name" type="text" required placeholder="Last name"/>
-                            <br>
-                            <label for="email">Email</label>
-                            <input name="email" type="email" required placeholder="example@domain.com"/>
-                            <br>
-                            <label for="message">Message</label><br>
-                            <textarea name="message" type="text" required placeholder="Enter your message here ..." cols="40" rows="20" ></textarea>
-                            <div class="center">
-                                <input type="submit" value="Submit">
-                            </div>
-                        </form>	
+        <div class="page-container">
+            <!--HAMBRGER MENU AND NAVBAR-->
+            <div class="nav"> 
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <nav class="menu"> <!--HAMBURGER ADDED CLASS MENU-->
+                    <a href="index.html">HOME</a>
+                    <a href="blogposts.html">BLOG</a>
+                    <a href="portfolio.html">PORTFOLIO</a>
+                    <a href="contact.html"class="active">CONTACT</a>
+                </nav>
+            </div>
+                
+            <header class="container" id="header-image"> 
+                    <h1>Contact</h1>   
+            </header> 
+            <main class="contact-container">
+                    <div class="form">
+                        <div class="textbox">
+                            <h4>Contact Form</h4>
+                            <form action="#" name="contact_form">
+                                <label for="first_name">First Name</label>
+                                <input name="first_name" type="text" required placeholder="First name"/>
+                                <br>
+                                <label for="last_name">Last Name</label>
+                                <input name="last_name" type="text" required placeholder="Last name"/>
+                                <br>
+                                <label for="email">Email</label>
+                                <input name="email" type="email" required placeholder="example@domain.com"/>
+                                <br>
+                                <label for="message">Message</label><br>
+                                <textarea name="message" type="text" required placeholder="Enter your message here ..." cols="40" rows="20" ></textarea>
+                                <div class="center">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>	
+                        </div>
                     </div>
-                </div>
-                <div class="sidebar">
-                    <div class="textbox">
-                        <h4>Details</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...</p>
-                    </div>  
-                </div>
-        </main>       
+                    <div class="sidebar">
+                        <div class="textbox">
+                            <h4>Details</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...</p>
+                        </div>  
+                    </div>
+            </main>  
+        </div>     
+
+
         <footer id="footer">
-            <img src="images/portrait653.jpg" id="footerportrait" alt="Watercolor Portrait">  
-            <p><b>&#169; 2020 Gizelle van Zyl.</b></p>
+            <div class ="footer-left">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <br>
+                    <a href="blogposts.html">Blog</a>
+                    <br>
+                    <a href="portfolio.html">Portfolio</a>
+                    <br>
+                    <a href="contact.html"class="active">Contact</a>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/gizellevz" target="_blank"><img src="images/libug.png" class="socialbugs"></a>
+                    <a href="https://github.com/Ellezique" target="_blank"><img src="images/gitbug.png" class="socialbugs"></a>
+                </div> 
+            </div>
+            <div class="footer-center">
+                <div class="footerportrait">
+                    <a href="portfolio.html"><img src="images/portrait653.jpg" id="footerportrait" alt="Watercolor Portrait"></a>
+                </div>
+                <p>&#169; 2020 Gizelle v.Z. All Rights Reserved</p>
+            </div>
+            <div class="footer-right">
+                <div class="contact-details">
+                    <p>Brisbane, Australia</p>
+                    <p>Fake Phone: <a href="0000001234"></a>(00) 0000 1234</a></p>
+                    <p>Fake Email: <a href="fakemail@fakedomain.com" target="_blank">fakemail@fakedomain.com</a></p>
+                    <p><a href="credits.html" target="_blank">Photo Credits</a></p>
+                </div>
+            </div>
         </footer>
+
+
     </body>
 </html>

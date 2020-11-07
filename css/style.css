@@ -36,13 +36,16 @@ html, body {
   font-family: 'Roboto', sans-serif;
   color:#abe3e4; /*Changes burger color*/
   background-color: #0a7891;
-    
 }
 
-html {
-  font-family: 'Roboto', sans-serif; /*If the browser does not support the first font, it will default to the second*/
+#page-container {/*page container*/
+  position: relative;
+  min-height: 100vh;
 }
 
+#content-wrap { /*Content wrap*/
+  padding-bottom: 200px; /* Footer height */
+}
 
 /* SECTION START*/
 
@@ -410,7 +413,6 @@ form {
 /*END BACKGROUND IMAGE*/
 
 /*FOOTER - Using Flexbox*/
-
 #footer {
   display: flex;
   flex-wrap: wrap;
@@ -420,8 +422,8 @@ form {
   font-family: 'Roboto', sans-serif;
   padding: 15px;
   position: relative; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
-  /*bottom: 0px;/*the footer moves to the bottom of the parent*/
-  
+  bottom: 0px;/*the footer moves to the bottom of the parent*/
+  width: 100%;
       border: 5px solid purple; /*border to show container - to be deleted*/
       box-sizing: border-box; /*TEMP BORDER to be deleted*/
    }
