@@ -36,8 +36,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
   color:#abe3e4; /*Changes burger color*/
   background-color: #0a7891;
-    border: 2px solid yellow; /*TEMP BORDER to be deleted*/
-    box-sizing: border-box; /*TEMP BORDER to be deleted*/
+    
 }
 
 html {
@@ -237,7 +236,6 @@ h4 {
 /*END HEADER */
 
 /*BLOG PAGE START - Using Float*/
-
 /* Two unequal columns floating next to each other */
 /* Left column */
 .main {
@@ -274,8 +272,6 @@ h4 {
 /*BLOG PAGE END*/
 
 
-
-
 /*CONTACT FORM PAGE - Using Flexbox*/
 /*Using flexbox - see also media break point*/
 .contact-container { 
@@ -283,23 +279,22 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%; 
-  margin-left: 5px;
-  margin-right: 5px;  
 }
 
 .form { 
   display: flex;
   flex-direction: column;
-  
   width: 74%; 
-  margin-right: 1%;
+  margin-left: 0.5%;
+  margin-right: 0.5% 
 }
 
 .sidebar { 
   display: flex;
   flex-direction: column;
-  width: 25%;
-  
+  width: 24%;
+  margin-left: 0.5%;
+  margin-right: 0.5% 
 }
 
 @media screen and (max-width: 800px) {
@@ -309,8 +304,6 @@ h4 {
     margin-right: 10px;
   }
 }
-
-
 
 /*Contact form*/
 input[type=text], input[type=email], select, textarea  {
