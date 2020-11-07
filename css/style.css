@@ -7,6 +7,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
   color:#abe3e4; /*Changes burger color*/
   background-color: #0a7891;
+  
 }
 
 #page-container {/*page container*/
@@ -21,23 +22,24 @@ html, body {
 /* SECTION START*/
 
 .textbox { /*This is a misnomer.*/
-  /*https://www.webdesignerdepot.com/2018/09/grid-vs-flexbox-which-should-you-choose/  
-  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
-  https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion*/
-  color: #00263d ;  
+  color: #061927;
   background-color: #e1ebef; 
   padding: 20px; 
   margin-top: 20px;
     border: 2px solid orangered;/*TEMP BORDER to be deleted*/
       box-sizing: border-box; /*TEMP BORDER to be deleted*/
-  }
+    }
 
- 
+  .textbox a:visited, .textbox a:link, .textbox a:hover {
+      color: #061927; 
+    }
+
  /* SECTION END*/
   p {
        border: 2px solid green; /*TEMP BORDER to be deleted*/
        box-sizing: border-box; /*TEMP BORDER to be deleted*/
   }
+
 
 h1 {
   text-shadow: 5px 5px 15px black;
