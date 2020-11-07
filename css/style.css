@@ -219,6 +219,11 @@ h4 {
   margin-right: 5px;
 }
 
+.portfolio-main {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .leftcolumn {
   float: left;
   width: 74%; 
