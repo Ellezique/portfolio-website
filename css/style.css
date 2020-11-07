@@ -428,10 +428,10 @@ form {
       box-sizing: border-box; /*TEMP BORDER to be deleted*/
    }
    
-    a:visited, a:link {
+    #footer a:visited, a:link {
       color: #e1ebef; 
     }
-    a:hover {
+    #footer a:hover {
       color: #0a7891;
     }
 
