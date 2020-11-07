@@ -371,14 +371,15 @@ form {
   } 
     
       #homeportrait:hover { 
-        -webkit-filter: saturate(50%); /*drains color from image*/
+        filter: saturate(50%);/*drains color from image*/
         /*When the transition placed in this section, the image jolts back to position and color as soon as hover ends. 
         To allow for a smooth transition back to position after hover ends, 
         the transition has been moved to #homeportrait*/
-                -webkit-transform: scale(1.5, 1.5);
-                -moz-transform: scale(1.5, 1.5);
-                -o-transform: scale(1.5, 1.5);
-                transform: scale(0.9, 0.9);
+        -webkit-filter: saturate(50%); 
+        -webkit-transform: scale(1.5, 1.5);
+        -moz-transform: scale(1.5, 1.5);
+        -o-transform: scale(1.5, 1.5);
+        transform: scale(0.9, 0.9);
 
 
       }
