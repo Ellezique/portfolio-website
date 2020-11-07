@@ -419,7 +419,6 @@ form {
   color: #e1ebef;
   font-family: 'Roboto', sans-serif;
   padding: 15px;
-  height: 200px;
   position: relative; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
   /*bottom: 0px;/*the footer moves to the bottom of the parent*/
   
@@ -439,6 +438,7 @@ form {
   order: 1;
   flex-basis: 100%;
   text-align: center;
+  height: 200px;
 
   } 
     }
@@ -457,6 +457,7 @@ form {
   order: 3;
   flex-basis: 100%;
   text-align: center;
+  height: 200px;
 }
 
 
@@ -479,6 +480,7 @@ form {
   order: 2;
   flex-basis: 100%;
   text-align: center;
+  height: 200px;
 }
   .contact-details {
         border: 1px solid lightseagreen; /*border to show container - to be deleted*/
