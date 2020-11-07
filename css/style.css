@@ -409,34 +409,38 @@ form {
 }
 /*END BACKGROUND IMAGE*/
 
-/*FOOTER*/
+/*FOOTER - Using Flexbox*/
+
 #footer {
-  width: 100%;
-
-
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-  color: #004b62;
-  font-family: 'Roboto', sans-serif;
-  position: relative; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
-  bottom: 0px;/*the footer moves to the bottom of the parent*/
-  display: inline-block; /*keeps element as inline display but allows width and height like a block element*/
-  
-  
+  flex-wrap: wrap;
+  flex-direction: row;
   background-color:  #00090f;
   color: #e1ebef;
-     border: 5px solid purple; /*border to show container - to be deleted*/
-     box-sizing: border-box; /*TEMP BORDER to be deleted*/
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+  height: 200px;
+  position: relative; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
+  /*bottom: 0px;/*the footer moves to the bottom of the parent*/
+  
+      border: 5px solid purple; /*border to show container - to be deleted*/
+      box-sizing: border-box; /*TEMP BORDER to be deleted*/
    }
    
-  .footer-left {
+    a:visited, a:link {
+      color: #e1ebef; 
+    }
+    a:hover {
+      color: #0a7891;
+    }
 
-  }
+/*Footer left column*/
+.footer-left {
+  order: 1;
+  flex-basis: 100%;
+  text-align: center;
 
-    .footer-links {
-
+  } 
     }
     .social-media {
       border: 1px solid lightseagreen; /*border to show container - to be deleted*/
@@ -445,15 +449,21 @@ form {
     
     .socialbugs {
       height: 64px;
+      margin-top: 15px;
     }
 
+/*Footer centre column*/
 .footer-center {
-
+  order: 3;
+  flex-basis: 100%;
+  text-align: center;
 }
+
+
   #footerportrait {
     height: 110px;
     /*center*/
-    display: block;
+   
     margin-left: auto;
     margin-right: auto;
     /*round image corners*/
@@ -464,17 +474,35 @@ form {
       box-sizing: border-box; /*TEMP BORDER to be deleted*/
  }
 
+ /*Footer right column*/
 .footer-right {
-
+  order: 2;
+  flex-basis: 100%;
+  text-align: center;
 }
   .contact-details {
-    text-align: right;
         border: 1px solid lightseagreen; /*border to show container - to be deleted*/
         box-sizing: border-box; /*TEMP BORDER to be deleted*/
   }
 
   
-
+  @media screen and (min-width:600px) {
+    #footer{
+      flex-wrap: nowrap;
+    }
+    .footer-left {
+      flex-basis: 1;
+      order: 1;
+    }
+    .footer-center {
+      flex-basis: 1;
+      order: 2;
+    }
+    .footerright {
+      flex-basis: 1;
+      order: 3;
+    }
+  }
   
 
 
