@@ -453,7 +453,7 @@ form {
   order: 1;
   flex-basis: 100%;
   text-align: center;
-  height: 200px;
+  height: 220px;
 
   } 
     }
@@ -472,7 +472,7 @@ form {
   order: 3;
   flex-basis: 100%;
   text-align: center;
-  height: 200px;
+  height: 220px;
 }
 
 
@@ -495,7 +495,7 @@ form {
   order: 2;
   flex-basis: 100%;
   text-align: center;
-  height: 200px;
+  height: 220px;
 }
   .contact-details {
         border: 1px solid lightseagreen; /*border to show container - to be deleted*/
