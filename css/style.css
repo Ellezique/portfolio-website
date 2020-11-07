@@ -1,34 +1,5 @@
 /*EXTERNAL STYLESHEET*/
 
-/*NOTES:*/
-/*1. Absolute units (e.g. px) refer to a fixed size. 
-Relative units (e.g %, em, vw, vh) change with regard to the size of a parent element or the screen size.*/
-/*2. Specificity: #id 100points, .class and pseudo take 20points, element tag 1 point*/
-/*3. Block display eg <p> <h1> <div> take up entire width of browser and appear below each other. 
-Inline display e.g. <a href><span> which only take as much space as content inside of it needs. 
-Inline elements cannot be given width or height.
-Can change display: inline or block. "inline-block" will keep element as inline display but allow width and height like a block element
-and will also wrap the content in that inline-block if screen size changes*/
-/*4. RELATIVE of ABSOLUTE. position : relative allows us to move it relative to where it was by default 
-using top/bottom/left/right: 10px etc. other elements not affected.
-position: absolute the element is taken out of the static flow of the document and positions itself relative to its parent, 
-so other elements may move.*/
-/*BOX MODEL: margin etc. are all calculated into width and height unless you add "box-sizing: border-box;"*/
-/*RESPONSIVE DESIGN - different sized devices
-1. Using pixels creates a static size. Percentages make images more responsiveto screen size
-2. Wrap content (text wraps automatically) - can use inline-block
-3. Media break points
-4. Flexbox. 
-  Container "display: flex;" stretch and squish with screen size XY. 
-  "Flex-direction: row/column;" 
-  "flex-wrap: wrap;"  Wrap not squish
-  ROW "justify-content: center or flex-start/end or space-around (spaced evenly) or space-between (space between)" allows positioning on main axis column or row.
-    Remove container height if possible so itmes take the space they need. 
-    If there is a height, the wrapped elements may spread to fill space.
-  COLUMN "align-items: center or flex-start/end" align items in row axis. 
-*/
-
-
 html, body {
   width: 100%;
   height: 100%; /*The size of the browser window - changes as browser bigger or smaller*/
@@ -282,6 +253,7 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%; 
+  margin-bottom: 10px;
 }
 
 .form { 
@@ -391,6 +363,40 @@ form {
   border-radius: 50%; /*This changes the square image into a rounded circle*/
 }
 
+
+.logo-row { /*Row for flexbox*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  bottom: 0;/*the footer moves to the bottom of the parent*/ 
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo-column {
+  flex: column;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.logos { 
+  border-radius: 10%; /*This rounds the square edges*/
+  background-color: white;
+  height: 48px;
+  width: 48px;
+  opacity: 95%;
+ 
+  
+  
+ 
+ 
+ 
+
+}
 
 #portfolio-images { /*Coming Soon*/
  
