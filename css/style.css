@@ -237,12 +237,12 @@ h4 {
 }
 
 /* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 70%;
-  padding: 20px;
-}
 
+.portfolio-images { 
+  width: 80%;
+  border: 10px solid #012a40; /*If image does not load*/
+  border-radius: 0.5%;
+ }
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -397,10 +397,7 @@ form {
         opacity: 95%;
       }
 
-.portfolio-images { 
- height: 350px;
- background-color: #012a40; /*If image does not load*/
-}
+
 
 /*BACKGROUND IMAGE*/
 .hero-image {
@@ -518,11 +515,43 @@ form {
       order: 3;
     }
   }
-  
-
-
- 
-
-
  }
 /*END FOOTER*/
+
+/*PHOTO CREDITS PAGE*/
+.credit-row {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other */
+.credit-column {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+}
+
+.credit-images {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 300px;
+}
+
+/* Responsive layout - makes a two column-layout instead of three columns */
+@media screen and (max-width: 800px) {
+  .credit-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .credit-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
