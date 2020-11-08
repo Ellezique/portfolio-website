@@ -9,8 +9,6 @@ html, body {
   background-color: #0a7891;
 }
 
-
-
 #content-wrap { /*Content wrap*/
   padding-bottom: 200px; /* Footer height */
 }
@@ -22,6 +20,9 @@ html, body {
   background-color: #e1ebef; 
   padding: 20px; 
   margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
     border: 2px solid orangered;/*TEMP BORDER to be deleted*/
       box-sizing: border-box; /*TEMP BORDER to be deleted*/
     }
@@ -210,21 +211,10 @@ h4 {
 /*BLOG PAGE START - Using Float*/
 /* Two unequal columns floating next to each other */
 /* Left column */
-.main {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.portfolio-main {
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
 .leftcolumn {
   float: left;
-  width: 74%; 
-  margin-right: 1%;
-  
+  width: 75%;  
 }
 /* Right column */
 .rightcolumn {
@@ -244,8 +234,7 @@ h4 {
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;    
+    width: 100%; 
   }
 }
 /*BLOG PAGE END*/
@@ -277,7 +266,7 @@ h4 {
   margin-right: 0.5% 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .sidebar, .form {
     width: 100%;
     padding: 0;
@@ -515,17 +504,28 @@ form {
 /*END FOOTER*/
 
 /*PHOTO CREDITS PAGE  https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp*/
+
+
+.credit-main { /*For whatever reason,this aligns the images at the top*/
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.credit-main .textbox {
+  
+}
+
 .credit-row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0px 4px;
   flex-direction: row;
 }
 
 /* Create three equal columns that sits next to each other */
 .credit-column {
-  flex: 32%;
-  max-width: 32%;
+  flex: 48%;
+  max-width: 48%;
   padding: 0 4px;
   display: inline-block;
 }
@@ -536,16 +536,8 @@ form {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of three columns */
-@media screen and (max-width: 800px) {
-  .credit-column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .credit-column {
     flex: 100%;
     max-width: 100%;
