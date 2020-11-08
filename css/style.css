@@ -7,13 +7,9 @@ html, body {
   font-family: 'Roboto', sans-serif;
   color:#abe3e4; /*Changes burger color*/
   background-color: #0a7891;
-  
 }
 
-#page-container {/*page container*/
-  position: relative;
-  min-height: 100vh;
-}
+
 
 #content-wrap { /*Content wrap*/
   padding-bottom: 200px; /* Footer height */
@@ -249,7 +245,7 @@ h4 {
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
-    padding: 0;
+    padding: 0;    
   }
 }
 /*BLOG PAGE END*/
@@ -523,13 +519,15 @@ form {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  flex-direction: row;
 }
 
 /* Create three equal columns that sits next to each other */
 .credit-column {
-  flex: 33%;
-  max-width: 33%;
+  flex: 32%;
+  max-width: 32%;
   padding: 0 4px;
+  display: inline-block;
 }
 
 .credit-images {
