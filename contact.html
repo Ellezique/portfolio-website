@@ -1,8 +1,4 @@
-<!--Your name and contact details-->
-<!--Links to professional accounts such as Github and LinkedIn-->
-<!--And if you don't feel comfortable publishing your email, it's OK, you can publish a fake one.
-Actual links to linkedin and Github should be included though.-->
-
+<!--CONTACT PAGE-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,62 +11,62 @@ Actual links to linkedin and Github should be included though.-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     </head>
-    
     <body>
-        <div class="page-container">
-            <!--HAMBRGER MENU AND NAVBAR-->
-            <div class="nav"> 
-                <label for="toggle">&#9776;</label>
-                <input type="checkbox" id="toggle"/>
-                <nav class="menu"> <!--HAMBURGER ADDED CLASS MENU-->
-                    <a href="index.html">HOME</a>
-                    <a href="blogposts.html">BLOG</a>
-                    <a href="portfolio.html">PORTFOLIO</a>
-                    <a href="contact.html"class="active">CONTACT</a>
-                </nav>
-            </div>
-                
-            <header class="container" id="header-image"> 
-                    <h1>Contact</h1>   
-            </header> 
-            <main class="contact-container">
-                    <div class="form">
-                        <div class="textbox">
-                            <h4>Contact Form</h4>
-                            <form action="#" name="contact_form">
-                                <label for="first_name">First Name</label>
-                                <input name="first_name" type="text" required placeholder="First name"/>
-                                <br>
-                                <label for="last_name">Last Name</label>
-                                <input name="last_name" type="text" required placeholder="Last name"/>
-                                <br>
-                                <label for="email">Email</label>
-                                <input name="email" type="email" required placeholder="example@domain.com"/>
-                                <br>
-                                <label for="message">Message</label><br>
-                                <textarea name="message" type="text" required placeholder="Enter your message here ..." cols="40" rows="20" ></textarea>
-                                <div class="center">
-                                    <input type="submit" value="Submit">
-                                </div>
-                            </form>	
+        <!--HAMBRGER MENU AND NAVBAR-->
+        <div class="nav"> 
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <nav class="menu"> 
+                <a href="index.html">HOME</a>
+                <a href="blogposts.html">BLOG</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="contact.html"class="active">CONTACT</a>
+            </nav>
+        </div>
+        <!--HEADER-->     
+        <header class="container" id="header-image"> 
+                <h1>Contact</h1>   
+        </header>
+        <!--MAIN--> 
+        <main class="contact-container">
+            <!--CONTACT FORM-->
+            <div class="form">
+                <div class="textbox">
+                    <h4>Contact Form</h4>
+                    <form action="#" name="contact_form">
+                        <label for="first_name">First Name</label>
+                        <input name="first_name" type="text" required placeholder="First name"/>
+                        <br>
+                        <label for="last_name">Last Name</label>
+                        <input name="last_name" type="text" required placeholder="Last name"/>
+                        <br>
+                        <label for="email">Email</label>
+                        <input name="email" type="email" required placeholder="example@domain.com"/>
+                        <br>
+                        <label for="message">Message</label><br>
+                        <textarea name="message" type="text" required placeholder="Enter your message here ..." cols="40" rows="20" ></textarea>
+                        <div class="center">
+                            <input type="submit" value="Submit">
                         </div>
-                    </div>
-                    <div class="sidebar">
-                        <div class="textbox">
-                            <h4>Details</h4>
-                            <p>Gizelle v.Z.</p>
-                            <p>Brisbane, Australia</p>
-                            <p>Fake Phone: (00) 0000 1234</p>
-                            <p>Email: gcab022010@coderacademy.edu.au</p>
-                            <a href="https://www.linkedin.com/in/gizellevz" target="_blank"><img src="images/libug.png" class="socialbugs"></a>
-                            <a href="https://github.com/Ellezique" target="_blank"><img src="images/github-mark.jpg" class="socialbugs" id="githubblack"></a>
-                        </div>  
-                    </div>
-            </main>  
-        </div>     
-
-
+                    </form>	
+                </div>
+            </div>
+            <!--SIDEBAR-->
+            <div class="sidebar">
+                <div class="textbox">
+                    <h4>Details</h4>
+                    <p>Gizelle v.Z.</p>
+                    <p>Brisbane, Australia</p>
+                    <p>Fake Phone: (00) 0000 1234</p>
+                    <p>Email: gcab022010@coderacademy.edu.au</p>
+                    <a href="https://www.linkedin.com/in/gizellevz" target="_blank"><img src="images/libug.png" class="socialbugs"></a>
+                    <a href="https://github.com/Ellezique" target="_blank"><img src="images/github-mark.jpg" class="socialbugs" id="githubblack"></a>
+                </div>  
+            </div>
+        </main>  
+        <!--FOOTER-->  
         <footer id="footer">
+            <!--Footer left section-->
             <div class ="footer-left">
                 <div class="footer-links">
                     <a href="index.html">Home</a>
@@ -86,12 +82,14 @@ Actual links to linkedin and Github should be included though.-->
                     <a href="https://github.com/Ellezique" target="_blank"><img src="images/gitbug.png" class="socialbugs"></a>
                 </div> 
             </div>
+            <!--Footer middle section-->
             <div class="footer-center">
                 <div class="footerportrait">
                     <a href="portfolio.html"><img src="images/portrait653.jpg" id="footerportrait" alt="Watercolor Portrait"></a>
                 </div>
                 <p>&#169; 2020 Gizelle v.Z. All Rights Reserved</p>
             </div>
+            <!--Footer right section-->
             <div class="footer-right">
                 <div class="contact-details">
                     <p>Brisbane, Australia</p>
@@ -101,7 +99,5 @@ Actual links to linkedin and Github should be included though.-->
                 </div>
             </div>
         </footer>
-
-
     </body>
 </html>
