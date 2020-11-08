@@ -268,7 +268,7 @@ h4 {
 .form { 
   display: flex;
   flex-direction: column;
-  width: 74%; 
+  width: 64%; 
   margin-left: 0.5%;
   margin-right: 0.5% 
 }
@@ -276,12 +276,12 @@ h4 {
 .sidebar { 
   display: flex;
   flex-direction: column;
-  width: 24%;
+  width: 34%;
   margin-left: 0.5%;
   margin-right: 0.5% 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .sidebar, .form {
     width: 100%;
     padding: 0;
