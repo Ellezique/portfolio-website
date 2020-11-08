@@ -1,5 +1,6 @@
 /*EXTERNAL STYLESHEET*/
 
+/*GENERAL STYLING*/
 html, body {
   width: 100%;
   height: 100%; /*The size of the browser window - changes as browser bigger or smaller*/
@@ -9,88 +10,25 @@ html, body {
   background-color: #0a7891;
 }
 
-#content-wrap { /*Content wrap*/
-  padding-bottom: 200px; /* Footer height */
+p {
+  border: 2px solid green; /*TEMP BORDER to be deleted*/
+  box-sizing: border-box; /*TEMP BORDER to be deleted*/
 }
-
-/* SECTION START*/
-
-.textbox { /*This is a misnomer.*/
-  color: #061927;
-  background-color: #e1ebef; 
-  padding: 20px; 
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-    border: 2px solid orangered;/*TEMP BORDER to be deleted*/
-      box-sizing: border-box; /*TEMP BORDER to be deleted*/
-    }
-
-  .textbox a:visited, .textbox a:link, .textbox a:hover {
-      color: #061927; 
-    }
-
- /* SECTION END*/
-  p {
-       border: 2px solid green; /*TEMP BORDER to be deleted*/
-       box-sizing: border-box; /*TEMP BORDER to be deleted*/
-  }
 
 
 h1 {
-  text-shadow: 5px 5px 15px black;
-  font-size: 80px;
-  text-align: center;
-  color: #e1ebef;
-  font-family: 'Caveat', cursive;
-        border: 2px solid orange; /*TEMP BORDER to be deleted*/ 
-        box-sizing: border-box; /*TEMP BORDER to be deleted*/
+text-shadow: 5px 5px 15px black;
+font-size: 80px;
+text-align: center;
+color: #e1ebef;
+font-family: 'Caveat', cursive;
+   border: 2px solid orange; /*TEMP BORDER to be deleted*/ 
+   box-sizing: border-box; /*TEMP BORDER to be deleted*/
 }
 
 h2 {
-  font-family: 'Permanent Marker', cursive; 
+font-family: 'Permanent Marker', cursive; 
 }
-
-h3 {
-  text-shadow: 8px 6px 9px black;
-  text-shadow: 5px 5px 15px black;
-  font-size: 50px; 
-  text-align: center;
-  color: #e1ebef;
-  font-family: 'Caveat', cursive;
-    border: 2px solid orange; /*TEMP BORDER to be deleted*/
-    box-sizing: border-box; /*TEMP BORDER to be deleted*/
-}
-       /*wave animation*/
-            .wavy {  /*reflection*/
-              position: relative;
-              -webkit-box-reflect: below -22px linear-gradient(transparent, rgba(0,0,0,0.2));
-            }
-
-            .wavy span {
-              color: #e1ebef;
-              position: relative;
-              display: inline-block;
-              animation: animate 10s ease-in-out infinite; 
-              animation-delay: calc(0.5s * var(--w));
-            }
-
-            @keyframes animate {
-              0%
-              {
-                transform: translateY(0px);
-              }
-              20%
-              {
-                transform: translateY(-20px);
-              }
-              40%, 100%
-              {
-                transform: translateY(0px);
-              }
-            }
-            /*end wave animation*/
 
 h4 {
   text-shadow: 5px 5px 15px black;
@@ -102,8 +40,33 @@ h4 {
         border: 2px solid orange; /*TEMP BORDER to be deleted*/ 
         box-sizing: border-box; /*TEMP BORDER to be deleted*/
 }
-/*NAVBAR with HAMBURGER*/
 
+/* textbox*/
+.textbox { /*This is a misnomer.*/
+  color: #061927;
+  background-color: #e1ebef; 
+  padding: 20px; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+    border: 2px solid orangered;/*TEMP BORDER to be deleted*/
+      box-sizing: border-box; /*TEMP BORDER to be deleted*/
+    }
+  .textbox a:visited, .textbox a:link, .textbox a:hover {
+      color: #061927; 
+    }
+/*header image for all pages except home page*/
+#header-image {
+  background-image: url("../images/ocean13.jpg"); 
+  background-color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 300px;
+}
+
+/*NAVBAR with HAMBURGER*/
 .nav { /*HAMBURGER*/
   position: relative; /*Adding a poition did not change the stacking order issue with animations and transitions.*/
   z-index: 2; /*Adding a z-index in additin to position: relative, moves the navbar on top of the animations/transitions*/
@@ -116,7 +79,6 @@ h4 {
           border: 2px solid red; /*border to show container - to be deleted*/
           box-sizing: border-box; /*TEMP BORDER to be deleted*/
         }  
-
    .menu {
     position: absolute;/*absolute position removes the burger menu from the flow so that it is on top of elements beneath it*/
     position: fixed; /*navbar remains fixed at the top of the display regardless of scrolling*/
@@ -124,8 +86,7 @@ h4 {
     width: 100%; /*navbar background color extends the full width available*/
     margin: 0 0 0 0; /*--30px margin to the right. 0 elsewhere.*/
     background-color:#061927; opacity:0.95; /*Very slight navbar opacity*/
-  }
-  
+  } 
    .menu a {
     clear: right;
     text-decoration: none;
@@ -135,32 +96,26 @@ h4 {
     text-shadow: 8px 6px 9px black;
     font-size: 18px;
     letter-spacing: 4px;          
-  }
-
-  
+  } 
   .nav label { /*.nav needs to be specified to avoid styling issues with contact form label*/
     font-size: 26px;
     line-height: 70px;
     display: none; /*This hides label*/
     width: 26px;
     position: fixed; /*Burger remains fixed at the top of the display regardless of scrolling*/
-  }
-  
+  }  
   #toggle {
     display: none; /*hidden*/    
   }
-              /*HOVER EFFECTS for .NAV*/
-            .nav :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
-              background-color: #012a40;
-              }
-
-              .nav a:hover { /*Pseudo class on hover. Only the relevant nav tab is affected by hover*/
-              color:#0a7891;} /*text color changes when the mouse hovers over it*/
-              
+        /*HOVER EFFECTS for .NAV*/
+      .nav :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
+        background-color: #012a40;
+        }
+        .nav a:hover { /*Pseudo class on hover. Only the relevant nav tab is affected by hover*/
+              color:#0a7891;} /*text color changes when the mouse hovers over it*/             
 /*NAVBAR END*/
   
 /*MEDIA BREAKPOINT: when screen is less than max width, the font size will respond. Otherwise default p size */
-
 @media screen and (max-width: 500px) { /*This styling applies when the browser size is 500 or less*/
   p {
   font-size: 20px;
@@ -168,37 +123,33 @@ h4 {
   .hero-image {
     height: auto;  /*If the screen is smaller than max-width, the image will resize automatically*/
   }
-  /*Below for burger menu*/
-  .nav label{ /*.nav must be specified to avoid styling issues with contact form label*/
-    display: block;
-    cursor: pointer; /*The cursor will change to a pointer to show the user they are hovering over a link*/
+      /*Below for burger menu*/
+      .nav label{ /*.nav must be specified to avoid styling issues with contact form label*/
+        display: block;
+        cursor: pointer; /*The cursor will change to a pointer to show the user they are hovering over a link*/
 
-    text-align: center;
-    width: 100%; /*navbar background color extends the full width available*/
-    margin: 0 0 0 0; 
-    background-color:#061927; opacity:0.95; /*Very slight navbar opacity*/
-   
-  }
-  .menu {
-    text-align: center;
-    width: 100%;
-    display: none; /*Hidden*/
-    
-  }
-  .menu a {
-    display: block;
-    border-bottom: 1px solid #57c7c8;
-    margin: 0;
-  }
-  #toggle:checked + .menu {
-    display: block;
-    
-  }
-}
+        text-align: center;
+        width: 100%; /*navbar background color extends the full width available*/
+        margin: 0 0 0 0; 
+        background-color:#061927; opacity:0.95; /*Very slight navbar opacity*/
+      }
+      .menu {
+        text-align: center;
+        width: 100%;
+        display: none; /*Hidden*/
+        
+      }
+      .menu a {
+        display: block;
+        border-bottom: 1px solid #57c7c8;
+        margin: 0;
+      }
+      #toggle:checked + .menu {
+        display: block; 
+      }
+    }
 /*End burger menu*/
 /*END MEDIA BREAKPOINT*/
-
-
 /*HEADER CONTAINER FOR PAGES OTHER THAN HOME*/
 .container { 
   padding: 0 0 0 0;
@@ -208,116 +159,58 @@ h4 {
  }
 /*END HEADER */
 
-/*BLOG PAGE START - Using Float*/
-/* Two unequal columns floating next to each other */
-/* Left column */
 
-.leftcolumn {
-  float: left;
-  width: 75%;  
+/*START HOME PAGE*/
+h3 {
+  text-shadow: 8px 6px 9px black;
+  text-shadow: 5px 5px 15px black;
+  font-size: 50px; 
+  text-align: center;
+  color: #e1ebef;
+  font-family: 'Caveat', cursive;
+    border: 2px solid orange; /*TEMP BORDER to be deleted*/
+    box-sizing: border-box; /*TEMP BORDER to be deleted*/
 }
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%; /*consider increasing to 25% once borders removed*/
+       /*wave animation*/
+      .wavy {  /*reflection*/
+        position: relative;
+        -webkit-box-reflect: below -22px linear-gradient(transparent, rgba(0,0,0,0.2));
+      }
+      .wavy span {
+        color: #e1ebef;
+        position: relative;
+        display: inline-block;
+        animation: animate 10s ease-in-out infinite; 
+        animation-delay: calc(0.5s * var(--w));
+      }
+      @keyframes animate {
+        0%
+        {
+          transform: translateY(0px);
+        }
+        20%
+        {
+          transform: translateY(-20px);
+        }
+        40%, 100%
+        {
+          transform: translateY(0px);
+        }
+      }
+      /*end wave animation*/
+
+/*home page background image*/
+.hero-image {
+  background-image: url("../images/ocean13.jpg"); 
+  background-color: black; /*the background color will display while the image is loading and if the image does not load*/
+  height: 1400px; /*image height set - the image should be sized to this size to save time loading page*/
+  background-position: center center; /* the image is positioned in the centre vertically and horizontally always*/
+  background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
+  background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
+  position: relative; 
 }
-
-/* Fake image */
-
-.portfolio-images { 
-  width: 80%;
-  border: 10px solid #012a40; /*If image does not load*/
-  border-radius: 0.5%;
- }
-
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%; 
-  }
-}
-/*BLOG PAGE END*/
-
-
-/*CONTACT FORM PAGE - Using Flexbox*/
-/*Using flexbox - see also media break point*/
-.contact-container { 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%; 
-  margin-bottom: 10px;
-}
-
-.form { 
-  display: flex;
-  flex-direction: column;
-  width: 64%; 
-  margin-left: 0.5%;
-  margin-right: 0.5% 
-}
-
-.sidebar { 
-  display: flex;
-  flex-direction: column;
-  width: 34%;
-  margin-left: 0.5%;
-  margin-right: 0.5% 
-}
-
-@media screen and (max-width: 950px) {
-  .sidebar, .form {
-    width: 100%;
-    padding: 0;
-    margin-right: 10px;
-  }
-}
-
-/*Contact form*/
-input[type=text], input[type=email], select, textarea  {
-  width: 100%; /* width of text entry areas inside the form */
-  padding: 15px;  
-  border: 1px solid #0a7891; /* Gray border */
-  border-radius: 5px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 5px; /* Add a top margin */
-  margin-bottom: 15px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  font-family: 'Roboto', sans-serif;
-  color: #00090f;
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #0a7891;
-  color:  #abe3e4;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 15px;
-  
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #004b62;
-}
-
-/* Add a background color to the form */
-form {
-  border-radius: 5px;
-  background-color: #e1ebef;
-  font-family: 'Roboto', sans-serif;
-}
-
-
-/*CONTACT FORM END*/
-
-
-
-/*IMAGES*/
-/*Home Page Portrait Image*/
+/*end home page background image*/
+/*home page portrait image*/
 #homeportrait {
   height: 70vh;
   /*box shadow effect*/
@@ -328,7 +221,6 @@ form {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-
   /*round image corners*/
   border-radius: 5px;
   /*The transition is only active when there is a hover so the below is only activiated on hover.*/
@@ -338,7 +230,6 @@ form {
    -ms-transition: all 2s ease;
        transition: all 2s ease;
   } 
-    
       #homeportrait:hover { 
         filter: saturate(50%);/*drains color from image*/
         /*When the transition placed in this section, the image jolts back to position and color as soon as hover ends. 
@@ -350,12 +241,7 @@ form {
         -o-transform: scale(1.5, 1.5);
         transform: scale(0.9, 0.9);
       }
-
-#githubblack {
-  border-radius: 50%; /*This changes the square image into a rounded circle*/
-}
-
-
+/*Logos on home page*/
 .logo-row { /*Row for flexbox*/
   display: flex;
   flex-direction: row;
@@ -381,29 +267,106 @@ form {
         width: 48px;
         opacity: 95%;
       }
+/*END HOME PAGE*/
 
 
-
-/*BACKGROUND IMAGE*/
-.hero-image {
-  background-image: url("../images/ocean13.jpg"); 
-  background-color: black; /*the background color will display while the image is loading and if the image does not load*/
-  height: 1400px; /*image height set - the image should be sized to this size to save time loading page*/
-  background-position: center center; /* the image is positioned in the centre vertically and horizontally always*/
-  background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
-  background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
-  position: relative; 
+/*BLOG PAGE START - Using Float*/
+/*two unequal columns floating next to each other */
+/*left column */
+.leftcolumn {
+  float: left;
+  width: 75%;  
 }
-
-#header-image {
-  background-image: url("../images/ocean13.jpg"); 
-  background-color: black;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  height: 300px;
+/*right column */
+.rightcolumn {
+  float: left;
+  width: 25%; /*consider increasing to 25% once borders removed*/
 }
-/*END BACKGROUND IMAGE*/
+/*images on blog page*/
+.portfolio-images { 
+  width: 80%;
+  border: 10px solid #012a40; /*If image does not load*/
+  border-radius: 0.5%;
+ }
+/*responsive layout - when the screen is less than 800px wide, the two columns will stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%; 
+  }
+}
+/*BLOG PAGE END*/
+
+
+/*PORTFOLIO PAGE -see general styling and textbox*/
+
+
+/*CONTACT FORM PAGE - Using Flexbox*/
+/*Using flexbox - see also media break point*/
+.contact-container { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; 
+  margin-bottom: 10px;
+}
+.form { 
+  display: flex;
+  flex-direction: column;
+  width: 64%; 
+  margin-left: 0.5%;
+  margin-right: 0.5% 
+}
+.sidebar { 
+  display: flex;
+  flex-direction: column;
+  width: 34%;
+  margin-left: 0.5%;
+  margin-right: 0.5% 
+}
+@media screen and (max-width: 950px) {
+  .sidebar, .form {
+    width: 100%;
+    padding: 0;
+    margin-right: 10px;
+  }
+}
+/*Contact form*/
+input[type=text], input[type=email], select, textarea  {
+  width: 100%; /* width of text entry areas inside the form */
+  padding: 15px;  
+  border: 1px solid #0a7891; /* Gray border */
+  border-radius: 5px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 5px; /* Add a top margin */
+  margin-bottom: 15px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: 'Roboto', sans-serif;
+  color: #00090f;
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #0a7891;
+  color:  #abe3e4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 15px; 
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #004b62;
+}
+/* Add a background color to the form */
+form {
+  border-radius: 5px;
+  background-color: #e1ebef;
+  font-family: 'Roboto', sans-serif;
+}
+/*github icon in sidebar on contact page*/
+#githubblack {
+  border-radius: 50%; /*This changes the square image into a rounded circle*/
+}
+/*CONTACT FORM END*/
 
 /*FOOTER - Using Flexbox*/
 #footer {
@@ -427,26 +390,22 @@ form {
     #footer a:hover {
       color: #0a7891;
     }
-
 /*Footer left column*/
 .footer-left {
   order: 1;
   flex-basis: 100%;
   text-align: center;
   height: 220px;
-
   } 
     }
     .social-media {
       border: 1px solid lightseagreen; /*border to show container - to be deleted*/
       box-sizing: border-box; /*TEMP BORDER to be deleted*/
     }
-    
     .socialbugs {
       height: 64px;
       margin-top: 15px;
     }
-
 /*Footer centre column*/
 .footer-center {
   order: 3;
@@ -454,12 +413,9 @@ form {
   text-align: center;
   height: 220px;
 }
-
-
   #footerportrait {
     height: 110px;
-    /*center*/
-   
+    /*center*/  
     margin-left: auto;
     margin-right: auto;
     /*round image corners*/
@@ -469,7 +425,6 @@ form {
       border: 1px solid lightseagreen; /*border to show container - to be deleted*/
       box-sizing: border-box; /*TEMP BORDER to be deleted*/
  }
-
  /*Footer right column*/
 .footer-right {
   order: 2;
@@ -481,8 +436,6 @@ form {
         border: 1px solid lightseagreen; /*border to show container - to be deleted*/
         box-sizing: border-box; /*TEMP BORDER to be deleted*/
   }
-
-  
   @media screen and (min-width:600px) {
     #footer{
       flex-wrap: nowrap;
@@ -503,25 +456,21 @@ form {
  }
 /*END FOOTER*/
 
-/*PHOTO CREDITS PAGE  https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp*/
 
-
+/*PHOTO CREDITS PAGE*/
 .credit-main { /*For whatever reason,this aligns the images at the top*/
   margin-left: 15px;
   margin-right: 15px;
 }
-
 .credit-main .textbox {
   
 }
-
 .credit-row {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 4px;
   flex-direction: row;
 }
-
 /* Create three equal columns that sits next to each other */
 .credit-column {
   flex: 48%;
@@ -529,17 +478,21 @@ form {
   padding: 0 4px;
   display: inline-block;
 }
-
 .credit-images {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
   .credit-column {
     flex: 100%;
     max-width: 100%;
   }
+}
+/*END PHOTO CREDIT PAGE*/
+
+
+#content-wrap { /*Content wrap*/
+  padding-bottom: 200px; /* Footer height */
 }
