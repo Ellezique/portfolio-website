@@ -120,7 +120,7 @@ h4 {
           box-sizing: border-box; /*TEMP BORDER to be deleted*/
         }  
 
-  .menu {
+   .menu {
     position: absolute;/*absolute position removes the burger menu from the flow so that it is on top of elements beneath it*/
     position: fixed; /*navbar remains fixed at the top of the display regardless of scrolling*/
     display: block;
@@ -129,7 +129,7 @@ h4 {
     background-color:#061927; opacity:0.95; /*Very slight navbar opacity*/
   }
   
-  .menu a {
+   .menu a {
     clear: right;
     text-decoration: none;
     color: #e1ebef;
@@ -141,7 +141,7 @@ h4 {
   }
 
   
-  label {
+  .nav label { /*.nav needs to be specified to avoid styling issues with contact form label*/
     font-size: 26px;
     line-height: 70px;
     display: none; /*This hides label*/
@@ -172,7 +172,7 @@ h4 {
     height: auto;  /*If the screen is smaller than max-width, the image will resize automatically*/
   }
   /*Below for burger menu*/
-  label{
+  .nav label{ /*.nav must be specified to avoid styling issues with contact form label*/
     display: block;
     cursor: pointer; /*The cursor will change to a pointer to show the user they are hovering over a link*/
 
@@ -242,6 +242,8 @@ h4 {
   width: 70%;
   padding: 20px;
 }
+
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -362,8 +364,6 @@ form {
         -moz-transform: scale(1.5, 1.5);
         -o-transform: scale(1.5, 1.5);
         transform: scale(0.9, 0.9);
-
-
       }
 
 #githubblack {
@@ -384,29 +384,22 @@ form {
   padding-left: 10px;
   padding-right: 10px;
 }
+      .logo-column {
+        flex: column;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .logos { 
+        border-radius: 10%; /*This rounds the square edges*/
+        background-color: white;
+        height: 48px;
+        width: 48px;
+        opacity: 95%;
+      }
 
-.logo-column {
-  flex: column;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.logos { 
-  border-radius: 10%; /*This rounds the square edges*/
-  background-color: white;
-  height: 48px;
-  width: 48px;
-  opacity: 95%;
- 
-  
-  
- 
- 
- 
-
-}
-
-#portfolio-images { /*Coming Soon*/
- 
+.portfolio-images { 
+ height: 350px;
+ background-color: #012a40; /*If image does not load*/
 }
 
 /*BACKGROUND IMAGE*/
