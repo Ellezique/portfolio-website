@@ -10,37 +10,37 @@ html, body {
   background-color: #0a7891;
 }
 
-p {
-  border: 2px solid green; /*TEMP BORDER to be deleted*/
-  box-sizing: border-box; /*TEMP BORDER to be deleted*/
-}
+/*<p> styled at media breakpoint, below*/
 
-
-h1 {
+h1 { /*Name on home page*/
 text-shadow: 5px 5px 15px black;
 font-size: 80px;
 text-align: center;
 color: #e1ebef;
 font-family: 'Caveat', cursive;
-   border: 2px solid orange; /*TEMP BORDER to be deleted*/ 
-   box-sizing: border-box; /*TEMP BORDER to be deleted*/
 }
 
-h2 {
+h2 { 
 font-family: 'Permanent Marker', cursive; 
+font-size: 33px;
 }
 
-h4 {
+/*h3 styling is under home page*/
+
+h4 { 
   text-shadow: 5px 5px 15px black;
   font-size: 40px;
   text-align: center;
   color: #e1ebef;
   background-color: #004b62;
   font-family: 'Caveat', cursive;
-        border: 2px solid orange; /*TEMP BORDER to be deleted*/ 
-        box-sizing: border-box; /*TEMP BORDER to be deleted*/
+  border: 2px solid lightblue;
+  box-sizing: border-box; 
 }
 
+h5 {
+  font-size: 15px;
+}
 /* textbox*/
 .textbox { /*This is a misnomer.*/
   color: #061927;
@@ -50,16 +50,20 @@ h4 {
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
-    border: 2px solid orangered;/*TEMP BORDER to be deleted*/
-      box-sizing: border-box; /*TEMP BORDER to be deleted*/
+  border: 5px solid #004b62;
+  box-sizing: border-box; /*The browser accounts for border/padding in values specified for element width and height. Easier to size elements.*/
     }
-  .textbox a:visited, .textbox a:link, .textbox a:hover {
-      color: #061927; 
+  .textbox a:visited, .textbox a:link {
+      color:  #004b62;
     }
+  .textbox a:hover {
+      color: #061927;
+      font-weight: bolder;
+  }
 /*header image for all pages except home page*/
 #header-image {
   background-image: url("../images/ocean13.jpg"); 
-  background-color: black;
+  background-color:#061927;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -68,23 +72,21 @@ h4 {
 
 /*NAVBAR with HAMBURGER*/
 .nav { /*HAMBURGER*/
-  position: relative; /*Adding a poition did not change the stacking order issue with animations and transitions.*/
-  z-index: 2; /*Adding a z-index in additin to position: relative, moves the navbar on top of the animations/transitions*/
+  /*"position: fixed;" - navbar stays at the top of the page regardless of scrolling but there was a stacking issue*/
+  position: relative; /*Adding a "position: relative;" did not change the stacking order issue with animations and transitions.*/
+  z-index: 2; /*Adding a z-index in addition to "position: relative", stacks the navbar on top of the animations/transitions*/
   font-family: 'Permanent Marker', cursive;  
   border-bottom: 1px solid #004b62;
-    text-align: center;
-    height: 70px;
-    line-height: 65px;
-    /*position: fixed; /*navbar stays at the top of the page regardless of scrolling*/
-          border: 2px solid red; /*border to show container - to be deleted*/
-          box-sizing: border-box; /*TEMP BORDER to be deleted*/
-        }  
+  text-align: center;
+  height: 65px;
+  line-height: 65px;
+  }  
    .menu {
     position: absolute;/*absolute position removes the burger menu from the flow so that it is on top of elements beneath it*/
     position: fixed; /*navbar remains fixed at the top of the display regardless of scrolling*/
     display: block;
     width: 100%; /*navbar background color extends the full width available*/
-    margin: 0 0 0 0; /*--30px margin to the right. 0 elsewhere.*/
+    margin: 0 0 0 0; 
     background-color:#061927; opacity:0.95; /*Very slight navbar opacity*/
   } 
    .menu a {
@@ -107,17 +109,17 @@ h4 {
   #toggle {
     display: none; /*hidden*/    
   }
-        /*HOVER EFFECTS for .NAV*/
-      .nav :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
+    /*HOVER EFFECTS for .NAV*/
+    .nav :hover { /*Pseudo class when mouse hovers over element. The entire nav is affected by hover*/
         background-color: #012a40;
-        }
-        .nav a:hover { /*Pseudo class on hover. Only the relevant nav tab is affected by hover*/
+    }
+    .nav a:hover { /*Pseudo class on hover. Only the relevant nav tab is affected by hover*/
               color:#0a7891;} /*text color changes when the mouse hovers over it*/             
 /*NAVBAR END*/
   
 /*MEDIA BREAKPOINT: when screen is less than max width, the font size will respond. Otherwise default p size */
 @media screen and (max-width: 500px) { /*This styling applies when the browser size is 500 or less*/
-  p {
+ main p { /*does not affect footer*/
   font-size: 20px;
     }
   .hero-image {
@@ -127,7 +129,6 @@ h4 {
       .nav label{ /*.nav must be specified to avoid styling issues with contact form label*/
         display: block;
         cursor: pointer; /*The cursor will change to a pointer to show the user they are hovering over a link*/
-
         text-align: center;
         width: 100%; /*navbar background color extends the full width available*/
         margin: 0 0 0 0; 
@@ -137,7 +138,6 @@ h4 {
         text-align: center;
         width: 100%;
         display: none; /*Hidden*/
-        
       }
       .menu a {
         display: block;
@@ -150,26 +150,24 @@ h4 {
     }
 /*End burger menu*/
 /*END MEDIA BREAKPOINT*/
+
+
 /*HEADER CONTAINER FOR PAGES OTHER THAN HOME*/
 .container { 
   padding: 0 0 0 0;
-        border: 2px solid lightblue;/*TEMP BORDER to be deleted*/
-        background-color: lightpink;
-        box-sizing: border-box; /*TEMP BORDER to be deleted*/
+  border: 2px solid lightblue;
+  box-sizing: border-box; 
  }
 /*END HEADER */
 
 
 /*START HOME PAGE*/
-h3 {
+h3 { /*"Portfolio" heading and animation on home page"*/
   text-shadow: 8px 6px 9px black;
-  text-shadow: 5px 5px 15px black;
   font-size: 50px; 
   text-align: center;
   color: #e1ebef;
-  font-family: 'Caveat', cursive;
-    border: 2px solid orange; /*TEMP BORDER to be deleted*/
-    box-sizing: border-box; /*TEMP BORDER to be deleted*/
+  font-family: 'Caveat', cursive;   
 }
        /*wave animation*/
       .wavy {  /*reflection*/
@@ -203,8 +201,8 @@ h3 {
 .hero-image {
   background-image: url("../images/ocean13.jpg"); 
   background-color: black; /*the background color will display while the image is loading and if the image does not load*/
-  height: 1400px; /*image height set - the image should be sized to this size to save time loading page*/
-  background-position: center center; /* the image is positioned in the centre vertically and horizontally always*/
+  height: 1400px; /*image height set - the image could be re-scaled to save time loading page*/
+  background-position: center center; /* the image is always positioned in the centre vertically and horizontally*/
   background-repeat: no-repeat; /* the image appears once in the page and is not repeated*/
   background-size: cover; /*resize the image to cover the full container and rescale image based on container size*/
   position: relative; 
@@ -223,7 +221,7 @@ h3 {
   margin-right: auto;
   /*round image corners*/
   border-radius: 5px;
-  /*The transition is only active when there is a hover so the below is only activiated on hover.*/
+  /*The transition is only active when there is a hover so the below is only activated on hover.*/
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
@@ -232,7 +230,7 @@ h3 {
   } 
       #homeportrait:hover { 
         filter: saturate(50%);/*drains color from image*/
-        /*When the transition placed in this section, the image jolts back to position and color as soon as hover ends. 
+        /*When the transition is placed in this section, the image jolts back to position and color as soon as hover ends. 
         To allow for a smooth transition back to position after hover ends, 
         the transition has been moved to #homeportrait*/
         -webkit-filter: saturate(50%); 
@@ -248,7 +246,6 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 200px;
-  bottom: 0;/*the footer moves to the bottom of the parent*/ 
   width: auto;
   margin-left: 10px;
   margin-right: 10px;
@@ -266,11 +263,18 @@ h3 {
         height: 48px;
         width: 48px;
         opacity: 95%;
+        box-shadow: 8px 6px 9px black;
       }
 /*END HOME PAGE*/
 
 
 /*BLOG PAGE START - Using Float*/
+ul {
+  list-style-position: outside;
+  list-style-type: square;
+  margin: 10px;
+  padding: 10px;
+}
 /*two unequal columns floating next to each other */
 /*left column */
 .leftcolumn {
@@ -280,14 +284,14 @@ h3 {
 /*right column */
 .rightcolumn {
   float: left;
-  width: 25%; /*consider increasing to 25% once borders removed*/
+  width: 25%;
 }
 /*images on blog page*/
 .portfolio-images { 
-  width: 80%;
-  border: 10px solid #012a40; /*If image does not load*/
-  border-radius: 0.5%;
- }
+ max-width: 80%;
+border: 10px solid #012a40; /*If image does not load*/
+border-radius: 0.5%;
+}
 /*responsive layout - when the screen is less than 800px wide, the two columns will stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
@@ -334,12 +338,12 @@ h3 {
 input[type=text], input[type=email], select, textarea  {
   width: 100%; /* width of text entry areas inside the form */
   padding: 15px;  
-  border: 1px solid #0a7891; /* Gray border */
+  border: 1px solid #0a7891;
   border-radius: 5px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 5px; /* Add a top margin */
-  margin-bottom: 15px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  box-sizing: border-box; /* ensures that padding and width stay in place */
+  margin-top: 5px; 
+  margin-bottom: 15px; 
+  resize: vertical; /* The user can resize the textarea vertically, if they wish */
   font-family: 'Roboto', sans-serif;
   color: #00090f;
 }
@@ -380,31 +384,31 @@ form {
   position: relative; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
   bottom: 0px;/*the footer moves to the bottom of the parent*/
   width: 100%;
-      border: 5px solid purple; /*border to show container - to be deleted*/
-      box-sizing: border-box; /*TEMP BORDER to be deleted*/
    }
-   
-    #footer a:visited, a:link {
-      color: #e1ebef; 
-    }
-    #footer a:hover {
-      color: #0a7891;
-    }
+#footer a:visited, a:link {
+  color: #e1ebef; 
+}
+#footer a:hover {
+  color: #0a7891;
+}
 /*Footer left column*/
 .footer-left {
   order: 1;
   flex-basis: 100%;
   text-align: center;
   height: 220px;
-  } 
-    .social-media {
-      border: 1px solid lightseagreen; /*border to show container - to be deleted*/
-      box-sizing: border-box; /*TEMP BORDER to be deleted*/
-    }
-    .socialbugs {
-      height: 64px;
-      margin-top: 15px;
-    }
+} 
+.footer-links{
+  margin-top: 5px;
+  line-height: 1.6;
+}
+.social-media {
+  margin-top: 10px;
+}
+.socialbugs {
+  height: 64px;
+  margin-top: 15px;
+}
 /*Footer centre column*/
 .footer-center {
   order: 3;
@@ -412,28 +416,26 @@ form {
   text-align: center;
   height: 220px;
 }
-  #footerportrait {
-    height: 110px;
-    /*center*/  
-    margin-left: auto;
-    margin-right: auto;
-    /*round image corners*/
-    border-radius: 5px;
-    } 
-    .footerportrait {
-      border: 1px solid lightseagreen; /*border to show container - to be deleted*/
-      box-sizing: border-box; /*TEMP BORDER to be deleted*/
+#footerportrait {
+  height: 110px;
+  /*center*/  
+  margin-left: auto;
+  margin-right: auto;
+  /*round image corners*/
+  border-radius: 5px;
+} 
+.footerportrait {
+  margin-top: 10px;   
  }
- /*Footer right column*/
-.footer-right {
+/*Footer right column*/
+.footer-right {  
   order: 2;
   flex-basis: 100%;
   text-align: center;
   height: 220px;
 }
   .contact-details {
-        border: 1px solid lightseagreen; /*border to show container - to be deleted*/
-        box-sizing: border-box; /*TEMP BORDER to be deleted*/
+  margin-top: 10px;       
   }
   @media screen and (min-width:600px) {
     #footer{
@@ -456,17 +458,14 @@ form {
 
 
 /*PHOTO CREDITS PAGE*/
-.credit-main { /*For whatever reason,this aligns the images at the top*/
-  margin-left: 15px;
-  margin-right: 15px;
-}
+
 .credit-row {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 4px;
   flex-direction: row;
 }
-/* Create three equal columns that sits next to each other */
+/* Create two equal columns that sit next to each other */
 .credit-column {
   flex: 48%;
   max-width: 48%;
