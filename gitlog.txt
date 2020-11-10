@@ -1,3 +1,15 @@
+commit 7fd5d22923c55d0922c353e59c0b0aa33bb3dee7
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 18:31:32 2020 +1000
+
+    remove unnecessary styling in css stylesheet
+
+commit 5f5375132b0171c0a88ed45c69f43aabe85472cc
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 18:29:35 2020 +1000
+
+    update gitlog
+
 commit 74d8c8d3adedf30b1be972ecdc2010131ab855a7
 Author: Ellezique <gizellevanzyl@gmail.com>
 Date:   Tue Nov 10 18:25:17 2020 +1000
