@@ -7,13 +7,12 @@
 ## PURPOSE
 This is a portfolio website, which introduces me to prospective employers by showcasing my abilities as an aspiring junior full stack developer and includes:
 - examples of my dev projects, including the website itself, which evidence my coding experience and skills; and
-- links to my Linkedin and Github accounts so that prospective employers may obtain additional information about my experience, without delay; and
+- links to my Linkedin and Github accounts so that prospective employers may seek additional information about my experience; and
 - a blog, which provides some insight into my interests as well as information that may be relevant, or of interest, to developers and information technology professionals generally; and
 - contact details enabling prospective employers to connect with me directly.
 ## TARGET AUDIENCE
 The primary target audience are prospective employers who:
 - are looking to engage a dev or IT professional; and
-- have high expectations of professionalism and work ethic;
 - have technical knowledge of:
   - information technology
   - software development/coding
@@ -23,22 +22,35 @@ The primary target audience are prospective employers who:
 A secondary audience may include prospective clients.
 ## SITEMAP
 ![sitemap](/README/docs/portfolio_sitemap.jpg)
-The credits page is not essential or strictly part of the portfolio and should not distract from the portfolio itself. Therefore, it does not link from the navbar but rather links from the footer. The purpose of the credit page is to:
-- provide special thanks and credit to stock photographers, whose images have been used throughout the website, with a dedicated page that names each stock photographer and links to the website where their images can be found;
-- create a not-so-secret link to an aesthetic mood board image page to reward users for taking special interest in the the photo credits;
-- specifically assert copyright over the portrait image.
 ## FUNCTIONALITY/ FEATURES
-Navbar and responsive burger menu 
-Responsive design for mobile , tablet and desktop screen sizes.
-External links to my Github and Linkedin profiles.
-A contact form. My email does not link from the contact sidebar so as to encourage use of the contact form. The email does however open from the footer if the user has the relevant browser features enabled.
-A fake phone number has been used as an interim placeholder.
-External links to the stock photographers images.
-A link that opens a mock-up pdf resume. The pdf document is converted from an image and is intentionally not saved as a text-searchable document. 
-
-
-## SCREENSHOTS
-
+###### Credit page
+The credits page, as a seperate page, is neither essential nor strictly part of the portfolio and should not distract from the portfolio itself. Therefore, it does not link from the navbar but rather links from the footer. The purpose of the credit page is to:
+- provide special thanks and credit to stock photographers, whose images have been used throughout the website, with a dedicated page that names each stock photographer and links to the external website where their images can be found;
+- create a not-so-secret link to an aesthetic mood board image page to reward users for taking special interest in the photo credits;
+- specifically assert copyright over the portrait image.
+###### Navbar and burger menu
+The desktop and tablet versions of the website have a fixed navbar that stays at the top of the screen regardless of the user scrolling down the page. When the page narrows, as it does with mobile version, the navbar changes to a drop down hamburger menu.
+###### Responsive design
+The layout of the pages changes with screen size ensuring that mobile, through tablet to desktop screen sizes have a responsive design.
+###### External links
+The website contains external links to my Github and Linkedin profiles. The footer links to a not-so-secret credit page, where stock images link to where the stock photographers made their images available online. 
+###### Contact form
+ My email does not link from the contact sidebar so as to encourage use of the contact form. The email does however open from the footer if the user has the relevant browser features enabled. A fake phone number has been used as an interim placeholder and accordingly there is no link that would enable mobiles to accidentally dial the fake number if the number is tapped.
+###### PDF Link
+The website contains a link to a mock-up pdf resume. The pdf document is converted from an image and is intentionally not saved as a text-searchable document. Provided user browser settings allow, the link will open the pdf in a new tab.
+## DESKTOP SCREENSHOTS
+![Home](/README/docs/home_page.jpg)
+![Blog](/README/docs/blog_posts.jpg)
+![Portfolio](/README/docs/portfolio_page.jpg)
+![Contact](/README/docs/contact_page.jpg)
+![Credit](/README/docs/photo_credits.jpg)
+## MOBILE SCREENSHOTS
+![Mobile Home](/README/docs/mobile_home.jpg)
+![Mobile Blog](/README/docs/mobile_blog_page.jpg)
+![Mobile Portfoio](/README/docs/mobile_portfolio.jpg)
+![Mobile Contact](/README/docs/mobile_contact.jpg)
+![Mobile Credit](/README/docs/mobile_credit_page.jpg)
+![Mobile Menu](/README/docs/mobile_menu.jpg)
 ## TECH STACK
 - HTML 5
 - CSS 3
