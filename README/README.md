@@ -31,7 +31,7 @@ The credits page, as a seperate page, is neither essential nor strictly part of 
 ###### Navbar and burger menu
 The desktop and tablet versions of the website have a fixed navbar that stays at the top of the screen regardless of the user scrolling down the page. When the page narrows, as it does with mobile version, the navbar changes to a drop down hamburger menu.
 ###### Responsive design
-The layout of the pages changes with screen size ensuring that mobile, through tablet to desktop screen sizes have a responsive design.
+The layout of the pages changes with screen size ensuring that mobile, through tablet to desktop screen sizes have a responsive design. The font-size increases on small/mobile screens.
 ###### External links
 The website contains external links to my Github and Linkedin profiles. The footer links to a not-so-secret credit page, where stock images link to where the stock photographers made their images available online. 
 ###### Contact form
