@@ -1,3 +1,21 @@
+commit 74d8c8d3adedf30b1be972ecdc2010131ab855a7
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 18:25:17 2020 +1000
+
+    Add screenshots and update README.
+
+commit 36b9112a7de10b3b21bdd48a57b3059886ce32f7
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Mon Nov 9 21:42:38 2020 +1000
+
+    Add content to README and create docs folder
+
+commit b94c33e328fb9aa2b902117d4a575b5a96cfa063
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Mon Nov 9 17:29:08 2020 +1000
+
+    gitlog updated
+
 commit bf968be4f747ab1320628a47ede8e54c4dc02565
 Author: Ellezique <gizellevanzyl@gmail.com>
 Date:   Mon Nov 9 15:31:36 2020 +1000
