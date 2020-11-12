@@ -35,7 +35,7 @@ The layout of the pages changes with screen size ensuring that mobile, through t
 ###### External links
 The website contains external links to my Github and Linkedin profiles. The footer links to a not-so-secret credit page, where stock images link to where the stock photographers made their images available online. 
 ###### Contact form
- My email does not link from the contact sidebar so as to encourage use of the contact form. The email does however open from the footer if the user has the relevant browser features enabled. A fake phone number has been used as an interim placeholder and accordingly there is no link that would enable mobiles to accidentally dial the fake number if the number is tapped.
+ The contact form message textarea can be extended vertically by clicking and dragging the bottom right corner of the message box. My email does not link from the contact sidebar so as to encourage use of the contact form. The email does however open from the footer if the user has the relevant browser features enabled. A fake phone number is also linked in the footer.
 ###### PDF Link
 The website contains a link to a mock-up pdf resume. The pdf document is converted from an image and is intentionally not saved as a text-searchable document. Provided user browser settings allow, the link will open the pdf in a new tab.
 ## DESKTOP SCREENSHOTS
