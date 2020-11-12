@@ -253,9 +253,11 @@ h3 { /*"Portfolio" heading and animation on home page"*/
   padding-right: 10px;
 }
       .logo-column {
-        flex: column;
+        display: flex;
+        flex-direction: column;
         margin-left: 5px;
         margin-right: 5px;
+        margin-top: 10px;
       }
       .logos { 
         border-radius: 10%; /*This rounds the square edges*/
