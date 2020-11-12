@@ -1,3 +1,39 @@
+commit c956550643fbe7c8f941356af72c246965cf7ebb
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 13:18:18 2020 +1000
+
+    Correct errors indicated by html validator. Update README.
+
+commit 2beac893356a31136d6f30709912837b7e0ea4a5
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 12:15:53 2020 +1000
+
+    add note to wavy animation webkit
+
+commit 8de7b7692215927035f7093905aabdefd0fc89b9
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 11:55:49 2020 +1000
+
+    fix errors in footer css
+
+commit 88898160444c54dd4fe20359dbd695241eaadfce
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 11:46:47 2020 +1000
+
+    fix error in css .logo-column
+
+commit 5f2cd4ef49e9ce9920cf61b68314de75fa76ce13
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 20:20:14 2020 +1000
+
+    Mention increased font-size in README
+
+commit 7e8b283f35dc98904829815ac6a8cef83216b8bb
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 18:31:49 2020 +1000
+
+    update gitlog
+
 commit 7fd5d22923c55d0922c353e59c0b0aa33bb3dee7
 Author: Ellezique <gizellevanzyl@gmail.com>
 Date:   Tue Nov 10 18:31:32 2020 +1000
