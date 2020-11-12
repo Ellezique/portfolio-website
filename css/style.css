@@ -382,7 +382,7 @@ form {
   background-color:  #00090f;
   color: #e1ebef;
   font-family: 'Roboto', sans-serif;
-  padding: 15px;
+  padding: 5px;
   position: relative; /*the footer is taken out of the static flow of the document and positions itself relative to its parent.*/
   bottom: 0px;/*the footer moves to the bottom of the parent*/
   width: 100%;
@@ -444,15 +444,12 @@ form {
       flex-wrap: nowrap;
     }
     .footer-left {
-      flex-basis: 1;
       order: 1;
     }
     .footer-center {
-      flex-basis: 1;
       order: 2;
     }
     .footerright {
-      flex-basis: 1;
       order: 3;
     }
   }
