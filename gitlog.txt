@@ -1,3 +1,9 @@
+commit 81408b81a0f21778af6e96cd204d1d7e52e51d0d
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 14 15:09:44 2020 +1000
+
+    add subresource integrity (sri)
+
 commit 5eb71e5b9bc774b54e6fad247c72a132bd274672
 Author: Ellezique <gizellevanzyl@gmail.com>
 Date:   Thu Nov 12 14:22:14 2020 +1000
