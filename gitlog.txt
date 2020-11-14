@@ -1,0 +1,329 @@
+commit 5eb71e5b9bc774b54e6fad247c72a132bd274672
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 14:22:14 2020 +1000
+
+    moved and changed folder names so that source code etc are saved in files named as per brief. Needed new permission to directory set up via terminal
+
+commit 62639e21adba350f89abff999bd0835485e49de9
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 13:32:46 2020 +1000
+
+    update gitlog
+
+commit c956550643fbe7c8f941356af72c246965cf7ebb
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 13:18:18 2020 +1000
+
+    Correct errors indicated by html validator. Update README.
+
+commit 2beac893356a31136d6f30709912837b7e0ea4a5
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 12:15:53 2020 +1000
+
+    add note to wavy animation webkit
+
+commit 8de7b7692215927035f7093905aabdefd0fc89b9
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 11:55:49 2020 +1000
+
+    fix errors in footer css
+
+commit 88898160444c54dd4fe20359dbd695241eaadfce
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 12 11:46:47 2020 +1000
+
+    fix error in css .logo-column
+
+commit 5f2cd4ef49e9ce9920cf61b68314de75fa76ce13
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 20:20:14 2020 +1000
+
+    Mention increased font-size in README
+
+commit 7e8b283f35dc98904829815ac6a8cef83216b8bb
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 18:31:49 2020 +1000
+
+    update gitlog
+
+commit 7fd5d22923c55d0922c353e59c0b0aa33bb3dee7
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 18:31:32 2020 +1000
+
+    remove unnecessary styling in css stylesheet
+
+commit 5f5375132b0171c0a88ed45c69f43aabe85472cc
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 18:29:35 2020 +1000
+
+    update gitlog
+
+commit 74d8c8d3adedf30b1be972ecdc2010131ab855a7
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 10 18:25:17 2020 +1000
+
+    Add screenshots and update README.
+
+commit 36b9112a7de10b3b21bdd48a57b3059886ce32f7
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Mon Nov 9 21:42:38 2020 +1000
+
+    Add content to README and create docs folder
+
+commit b94c33e328fb9aa2b902117d4a575b5a96cfa063
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Mon Nov 9 17:29:08 2020 +1000
+
+    gitlog updated
+
+commit bf968be4f747ab1320628a47ede8e54c4dc02565
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Mon Nov 9 15:31:36 2020 +1000
+
+    Removed borders and made minor changes to comments and styling.
+
+commit 5c618a912a4c3b4b38364ef0025f6602c314c25c
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 22:23:11 2020 +1000
+
+    fix stylesheet problems alerted by vs
+
+commit 918f48a3e7b7baebf8d851cbea27d8c1a231131a
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 22:21:08 2020 +1000
+
+    Reorganise css stylesheet and add comments
+
+commit d79c53501f8fac12c56f7bc9139746cbd4332620
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 20:50:00 2020 +1000
+
+    Add all rights reserved to photo of painting
+
+commit dfb074e588ea5e34b85423760f76546e525822b7
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 20:31:46 2020 +1000
+
+    Add comments to home page
+
+commit bbc8afa4d07974784e97ee9bb2a15522212f5a64
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 20:14:00 2020 +1000
+
+    Comments on portfolio page, fix spacing, remove unnecessary css
+
+commit 066baf5de68bbefc8fb549ab555b7e64b4f576bf
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 18:44:42 2020 +1000
+
+    Add notes to HTML, move credits images into columns
+
+commit 0cadc00e519ce632ded7f31f349bc9d1101335a5
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 15:05:05 2020 +1000
+
+    Update blog and add images to blog and photo credits page
+
+commit 15c03e21e128c28f864f88ac9f410adbfa879df9
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 13:38:26 2020 +1000
+
+    Credit page responsive grid layout
+
+commit b30d45914d6bb924703afbfd7ef09a5db6e396ad
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 12:29:47 2020 +1000
+
+    fix side bar width on contact page
+
+commit 4b905f14d767a7bbc23db9646962aa2696260891
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 8 12:24:56 2020 +1000
+
+    fix styling issues with labels on navbar and contact page
+
+commit 0967ccb99931b39d8ad9a55bdaf0d7fb70a92b31
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 22:30:45 2020 +1000
+
+    Main margin on portfolio page added.
+
+commit 7a27c24daa6aef767f31aa67550a507af3f0d816
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 22:27:26 2020 +1000
+
+    Change footer height
+
+commit 051477f88a3e295d674f44debace4e530587bd33
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 22:21:27 2020 +1000
+
+    Add resume pdf
+
+commit ed33ad00ebc50e817cc788e110aa5247fba5f11e
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 20:21:41 2020 +1000
+
+    Add logos to home page
+
+commit b860f7902ae55ebe677e3543642838cd56f18b9b
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 16:38:49 2020 +1000
+
+    GitHub bug black inserted on contact page with circle radius
+
+commit 6e850b3f8862afe8876fef598b6ff8ebc76c4550
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 16:17:01 2020 +1000
+
+    fix footer <a> tag changes to only apply to footer and not affect post list
+
+commit 8d5de2bd546f5ab0bee844661d1644a19421170c
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 16:13:59 2020 +1000
+
+    copy footer to all pages
+
+commit 41532fc414d0ab02a429ab5aad470f83077730bf
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 15:23:25 2020 +1000
+
+    fix footer column height to apply to children, not parent,so that background color covers footer with media break
+
+commit 6d27f16e744095296c843a812af02a6a7f96322b
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 15:16:23 2020 +1000
+
+    footer has content and styling on home page
+
+commit 9329a92e62e9cb7596ecd5bc2ead441c6a218c1d
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 13:28:47 2020 +1000
+
+    Create photo credits page with link in footer.
+
+commit 43ac595097d37fdbcc2ca7efdb33a21d4100ab56
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 13:06:47 2020 +1000
+
+    Fix bugs in stylesheet and work on footer
+
+commit 980768480e7387a521fa16fd364d86ea54fbb709
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 12:33:36 2020 +1000
+
+    Home  page portrait image links to portfolio page
+
+commit 7c3baa91495cc27e4419648574b97081b89746b1
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Nov 7 12:29:26 2020 +1000
+
+    Social bugs open in new window and connect to correct profiles
+
+commit 9ffb179c808c7ab3f50151e50978ad3062eb97a9
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Fri Nov 6 16:21:04 2020 +1000
+
+    Commit contact page using flexbox
+
+commit 3fe8956c596c0a8f97cce1c6b52957f6297fa553
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Fri Nov 6 11:38:08 2020 +1000
+
+    Rearrange order of content in css stylesheet
+
+commit 876490308f3eb34272dfe27301ce6a9e6ad29098
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Fri Nov 6 11:33:13 2020 +1000
+
+    Create blank README, add githug and linkedin bugs
+
+commit d3b46221aca0ce00c506a31602870ac4add3d91c
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Thu Nov 5 10:00:03 2020 +1000
+
+    Commit styling on contact form
+
+commit 863e799e27e2bfd831d564a86e947b969903d566
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Wed Nov 4 18:47:09 2020 +1000
+
+    Commit draft contact page with contact form
+
+commit 5ab1d8661e547decc1dc2d05b1aa9cfc41fccc3d
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Wed Nov 4 16:15:18 2020 +1000
+
+    Commit blog page with links to posts in page
+
+commit 88f67ae9b42b6d12ed34eabc716021c547a41607
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Tue Nov 3 22:34:09 2020 +1000
+
+    Commit portfolio page and use z-index to fix stacking order of nav bar and transition/animation
+
+commit 887c65b8ebac9117b755064164b9c8c6d59593cb
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Mon Nov 2 23:21:20 2020 +1000
+
+    Commit hamburger menu, changes to responsive design and containers, insert flexbox
+
+commit f10dcdaf3e9e61c9c87265ff4b75a1c196656fce
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Mon Nov 2 00:32:18 2020 +1000
+
+    Commit transitions and filters for home page
+
+commit cdab9b12289f23f97fffb335e93327a196b69804
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 1 23:54:01 2020 +1000
+
+    Commit text wave animation
+
+commit c76823d1ca325ccd391071f56c38ba2d2b632e6e
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 1 22:40:25 2020 +1000
+
+    Commit ocean pallette and shadows in stylesheet
+
+commit 3e090b5d854c80931926ff073abcb317e5285ca7
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 1 21:08:55 2020 +1000
+
+    Commit added border boxes, comments and created gitlog
+
+commit 0ffa4381eec05f90f49800a04f051488a3113b26
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sun Nov 1 11:47:00 2020 +1000
+
+    Commit new h1 h2 font. Nav bar hover styling changed. Temporary borders inserted.
+
+commit 2188a9ce4199f39478d46acd2e7d1f573b543684
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 21:39:10 2020 +1000
+
+    Commit inserting watercolor portrait image but changes needed to ensure image is displayed
+
+commit b20c5d34b226010046583a2ebfc995b4bfb1ef9d
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 20:53:03 2020 +1000
+
+    Third Commit font selection and assignment notes
+
+commit e744dafb65976507da2d17cac25715814f549718
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 19:09:25 2020 +1000
+
+    Third Commit create navbar and link pages
+
+commit 1b8e180237d8941957aaa2b8222e68aee90994ab
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 17:48:56 2020 +1000
+
+    Second commit from master branch adding background image on css stylesheet
+
+commit fbba5ba2857d97eac9633c016a286728d895854c
+Author: Ellezique <gizellevanzyl@gmail.com>
+Date:   Sat Oct 31 15:00:02 2020 +1000
+
+    First commit from master branch

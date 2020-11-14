@@ -213,7 +213,7 @@ h3 { /*"Portfolio" heading and animation on home page"*/
 #homeportrait {
   height: 70vh;
   /*box shadow effect*/
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000; 
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000;
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 49px 16px #000000;
   /*center*/
   display: block;
@@ -223,11 +223,11 @@ h3 { /*"Portfolio" heading and animation on home page"*/
   /*round image corners*/
   border-radius: 5px;
   /*The transition is only active when there is a hover so the below is only activated on hover.*/
-  -webkit-transition: all 2s ease;
+   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
    -ms-transition: all 2s ease;
-       transition: all 2s ease;
+       transition: all 2s ease; 
   } 
       #homeportrait:hover { 
         filter: saturate(50%);/*drains color from image*/
