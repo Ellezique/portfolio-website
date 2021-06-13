@@ -28,34 +28,77 @@
                 <h1>Portfolio</h1>   
         </header>
         <!--MAIN SECTIONS--> 
-        <main>
-            <section class="textbox">
-                <h2>ABOUT</h2>
-                <p>I am a current student undertaking a full-stack web-development bootcamp, seeking to gain industry experience following course completion in August 2021. 
-                <br>
-                 I currently yield the powers of: HTML, CSS, Git, Ruby, Rails, JavaScript, APIs and React.
-                 I plan on expanding my skills to include: MongoDB, Node.js, Mongoose, Express.js and Redux.</p>
-                <p>I am a creative personality with a passion for the arts. I enjoy consuming movies, series, theatre and books. I am a gamer, playing for fun, with a preference for PC and arcade games. Occasionally, you may find me drawing dark matter or painting with acrylics or watercolor.
-                    I love learning. My browser history is littered with academic papers and research.
-                </p>
-                <p>Prior to my pursuit of a STEM career, I worked as a practicing lawyer with several years of experience in criminal and civil law.</p>
-                <a href="images/resume.pdf" target="_blank">View Resume</a>
-            </section>
-            <section class="textbox">
-                <h2>WEB DESIGN</h2>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <p>HTML, CSS, Bootstrap, Ruby</p>
-            </section>
-            <section class="textbox">
-                <h2>WEB APPLICATION</h2>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <p>Ruby on Rails</p>
-            </section>
-            <section class="textbox">
-                <h2>BACK END</h2>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <p>JavaScript, React, MongoDB, Express, Node.js</p>
-            </section>
+       <!--MAIN-->
+       <main>
+            <!--ROW-->
+            <div class="row">
+                <!--LEFT COLUMN - Blog Posts-->
+                <div class="leftcolumn">
+                    <section class="textbox">
+                        <h2>ABOUT</h2>
+                        <p>I am a current student undertaking a full-stack web-development bootcamp, seeking to gain industry experience following course completion in August 2021.</p> 
+                        <p>I currently yield the powers of: HTML, CSS, Git, Ruby, Rails, JavaScript, APIs and React. I plan on expanding my skills to include: MongoDB, Node.js, Mongoose, Express.js and Redux.</p>
+                        <p>I am a creative personality with a passion for the arts. I enjoy consuming movies, series, theatre and books. I am a gamer, playing for fun, with a preference for PC and arcade games. Occasionally, you may find me drawing dark matter or painting with acrylics or watercolor.
+                            I love learning. My browser history is littered with academic papers and research.
+                        </p>
+                        <p>Prior to my pursuit of a STEM career, I worked as a practicing lawyer with several years of experience in criminal and civil law.</p>
+                        <p>This website is built using HTML and CSS. You may read about my other projects below.</p>
+                        <a href="images/resume.pdf" target="_blank">View Resume</a>
+                    </section>
+                    <section class="textbox">
+                        <h2><a id="project-post-3"></a>ARCADE SECRETARY - Teamwork Hackathon</h2>
+                        <h5>JavaScript, React, HTML, CSS</h5>
+                        <p>Arcade Secretary is a score-based speed typing game. Secretaries are armed with their keyboards and lighting reflexes when they enter the fast-paced corporate battlefield where speed and accuracy pave the way to victory!</p>
+                        <p>Secretaries are given a strict deadline during which they will be given words, which they must type and submit as quickly and as accurately as super-humanly possible.</p>
+                        <p>Secretaries will be rewarded for accuracy and receive one point for each character that they typed correctly. Mistakes are a liability! If a secretary makes a mistake, they will not get a point for the incorrectly typed character.</p>
+                        <p>Secretaries race against time! When time runs out, the last word will be discarded. The deadline is reached and the game ends.</p>
+                        <p>Secretaries are then provided with a performance review which will include total score, WPM (words per minute) and average accuracy per character.</p>
+                        <p>Secretaries are immortal and live to battle again, always seeking to improve and chase deadline victories.</p>
+                        <p>For more, <a href="https://github.com/Ellezique/Arcade-Secretary-as-deployed" target="_blank">visit Arcade Secretary here</a> where you may find additional information about the app and deployed url.</p>
+                        <img src="images/Portfolio/arcadesecretary.PNG" class="portfolio-images" alt="Arcade-Secretary">
+                    </section>
+                    <section class="textbox">
+                        <h2><a id="project-post-2"></a>ARTIZE - Two-way Marketplace</h2>
+                        <h5>Development & Database: Ruby, Rails, HTML, CSS, PostgreSQL</h5>
+                        <p>Project Management, Planning and Software: Trello, Draw.io, Balsamiq Wireframes, pgAdmin
+                            <br>
+                            Gems: Bootstrap, Devise, Rolify, Simple Form
+                            <br>
+                            Image Upload: Cloudinary and Rails Active Storage
+                            <br>
+                            Payment: Stripe
+                            <br>
+                            Deployed using Heroku
+                        </p>
+                        <p>Artize is an online Gallery to buy and sell art direct, without traditional "middle-man" gallery fees and commission.
+                            To view the rest of this website, users need to sign up or log in. Once logged in, a user may browse, list and purchase artworks.Users may only delete or edit their own listings. The admin user has unrestricted access to edit, delete or list any artworks. Future expansion may include a search feature allowing users to sort listed artworks by medium and style.
+                        </p>
+                        <p>For more, <a href="https://github.com/Ellezique/Artize-" target="_blank">visit Artize here</a> where you may find additional information about the app and deployed url.</p>
+                        <img src="images/Portfolio/artize.PNG" class="portfolio-images" alt="Artize">
+                    </section>
+                    <section class="textbox">
+                        <h2><a id="project-post-1"></a>RIDDLES - Terminal Application</h2>
+                        <h5>Ruby, Git, Github, Markdown</h5>
+                        <p>Riddles runs from the shell and accepts user input. Players may enter their username or continue as default "Player One" (yes, this is a reference to arcade games and Ernest Cline's novel, "Ready Player One").</p>
+                        <p>Riddles is a ruby terminal application game that challenges the user to solve 5 riddles. Each riddle has a one-word answer. When playing, the user will receive the riddle and have an opportunity to provide their one-word answer. If the user solves the riddle, or if they run out of attempts, they move to the next riddle until they have played all 5 riddles. If the user is unable to solve the riddle, they may attempt a set number of tries (how many will depend on the difficulty mode selected).</p>
+                        <p>Aesthetics give the game some personality and visual appeal. Ascii art was copied from an online generator and pasted as a string in the code. The lolize gem was used to color the Ascii headers for each section of the application. The colorize gem introduced solid color text.</p>
+                        <p>For more, <a href="https://github.com/Ellezique/ruby-riddles-game" target="_blank">visit Riddles here</a></p>
+                        <img src="images/Portfolio/riddles.PNG" class="portfolio-images" alt="Riddles">
+                    </section>
+                </div>
+                <!--RIGHT COLUMN - Blog List-->
+                <div class="rightcolumn">   
+                    <div class="textbox">
+                        <h4>Projects List</h4>
+                        <p>In addition to this website, you may read about some of my other projects here:</p>
+                        <ul>
+                            <li><a href="#project-post-3">June 2021, Arcade Secretary</a><br/><br/></li>
+                            <li><a href="#project-post-2">March 2021, Artize</a><br/><br/></li>
+                            <li><a href="#project-post-1">December 2020, Riddles</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </main>
         <!--FOOTER-->      
         <footer id="footer">
