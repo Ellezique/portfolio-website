@@ -10,6 +10,7 @@ html, body {
   background-color: #0a7891;
 }
 
+
 /*<p> styled at media breakpoint, below*/
 
 h1 { /*Name on home page*/
@@ -118,6 +119,13 @@ h5 {
 /*NAVBAR END*/
   
 /*MEDIA BREAKPOINT: when screen is less than max width, the font size will respond. Otherwise default p size */
+
+@media screen and (min-width: 1800px) { 
+.row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+} }
 @media screen and (max-width: 500px) { /*This styling applies when the browser size is 500 or less*/
  main p { /*does not affect footer*/
   font-size: 20px;
@@ -485,3 +493,19 @@ form {
   }
 }
 /*END PHOTO CREDIT PAGE*/
+.wrap-element {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  width: 100%;
+}
+
+.wrapped-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
